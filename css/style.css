@@ -1,0 +1,227 @@
+:root{
+  --vp-home-hero-image-filter: blur(72px);
+  --vp-home-hero-image-background-image: linear-gradient( -45deg, #bd34fe 50%, #47caff 50% );
+}
+html {
+  height: 100%;
+  font-family: "Space Grotesk", sans-serif;
+  /* box-shadow: inset 0 0 0 100% rgba(255, 255, 255, 0.2); */
+  overflow: hidden;
+}
+
+body {
+  background-image: url("../images/bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100%;
+}
+
+.navbar-brand {
+  color:white;
+  font:sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+}
+.nav-link {
+  font-size: 20px;
+}
+i {
+  margin-right: 8px;
+}
+
+.container{
+  margin:0;
+  padding:0;
+  min-width:100%;
+}
+
+.btn{
+  font-weight: bold;
+  padding: 10px 20px;
+  margin:10px;
+  background-color: #2cb41e;
+  color: white;
+  border: none;
+}
+
+
+.text-col{
+
+  padding-left:8%;
+  margin-top: 12%;
+  color:white;
+}
+.bgc{
+  position: absolute;
+  background-image: var(--vp-home-hero-image-background-image);
+  filter: var(--vp-home-hero-image-filter);
+  height: 200px;
+  width: 800px;
+  z-index: -1;
+}
+h1{
+  font-family: 'Unbounded', cursive;
+  margin-left:20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    225deg,
+    #ACB1D6 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s reverse infinite;
+  display: inline-block;
+  font-size: 70px;
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+p{
+  padding: 10px;
+  margin-left: 20px;
+  padding-top: 15px;
+  font-size: 18px;
+}
+.intro-con{
+    margin-left:40px;
+  /* font-family: 'Oswald', sans-serif; */
+  font-family: 'Anton', sans-serif;
+  font-size: 30px;
+  /* color: #DDFFBB; */
+  /* color: #F0FF42; */
+  color: white;
+}
+
+/* ----------------- */
+.ag-format-container {
+  /* display:block; */
+  display: flex;
+  margin:20px;
+}
+
+.ag-courses_box {
+  margin-top: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  padding: 10px 0;
+}
+.ag-courses_item {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  -ms-flex-preferred-size: calc(33.33333% - 30px);
+  margin: 0 100px 30px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden;
+  border-radius: 28px;
+  margin-right: 5%;
+}
+.ag-courses-item_link {
+  display: block;
+  padding: 30px 20px;
+  background-color: #121212;
+  /* background-color: #212A3E; */
+  /* background-color: #2C3333; */
+  /* background-color: #092532; */
+  overflow: hidden;
+  position: relative;
+}
+.ag-courses-item_link:hover,
+.ag-courses-item_link:hover .ag-courses-item_date {
+  text-decoration: none;
+  color: #FFF;
+}
+.ag-courses-item_link:hover .ag-courses-item_bg {
+  -webkit-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(13);
+}
+.ag-courses-item_title {
+  min-height: 87px;
+  margin: 0 0 25px;
+  overflow: hidden;
+  font-size: 20px;
+  color: #FFF;
+  z-index: 2;
+  position: relative;
+}
+.ag-courses-item_bg {
+  height: 128px;
+  width: 128px;
+  background-color: #f9b234;
+
+  z-index: 1;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+
+  border-radius: 50%;
+
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.ag-courses_item:nth-child(2n) .ag-courses-item_bg {
+  background-color: #3ecd5e;
+}
+.ag-courses_item:nth-child(3n) .ag-courses-item_bg {
+  background-color: #e44002;
+}
+
+/* -------------------- */
+
+
+/* overlay container */
+#overlay-cont{
+  display:none;
+  background-color: white;
+  background-image:linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(31,140,114,1) 59% );
+  backdrop-filter:blur(2px);
+  position:absolute;
+  bottom:0;
+  height:90%;
+  min-width:100%;
+  z-index: 1;
+
+}
+
+#overlay-col{
+  margin-top:5%;
+  color:white;
+  text-align: center;
+
+}
+
+.overlay-text{
+  padding-top: 8%;
+  text-align: justify;
+}
+h3{
+  font-size: 50px;
+}
+.overlay-text p{
+  font-size: 22px;
+}
+.launch-image{
+  max-height: 700px;
+  position:absolute;
+  right:5%;
+}

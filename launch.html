@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Launch page</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"/>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/> -->
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md">
+            <h2 class="navbar-brand">RADIO-X</h2>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <button type="button" onclick="switchVisible();" class="btn btn-light">ABOUT</button>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div id="main-cont">
+                    <div class="col-md-6 text-col">
+                      <!-- <div class="bgc">
+                      </div> -->
+                        <h1>Coming Soon....</h1>
+                        <span class="intro-con"> Discover the future of chest X-ray analysis with RadioX <br> </span>
+                </div>
+                <div class="col-md-6">
+                  <div class="bgc">
+                  </div>
+                </div>
+                <div class="ag-format-container">
+                <div class="ag-courses_box">
+                  <div class="ag-courses_item">
+                    <a href="#" class="ag-courses-item_link">
+                      <div class="ag-courses-item_bg"></div>
+
+                      <div class="ag-courses-item_title">
+                      Our revolutionary AI-powered app leverages cutting edge AI technology to predict  and analyze chest diseases with unmatched accuracy and speed.
+                            </div>
+                          </a>
+                        </div>
+                      <div class="ag-courses_item">
+                        <a href="#" class="ag-courses-item_link">
+                          <div class="ag-courses-item_bg"></div>
+
+                          <div class="ag-courses-item_title">
+                          Say goodbye to manual intepretations and long waiting times.With RadioX, healthcare professionals can make informed decisions and provide timely care to patients.
+                                </div>
+                              </a>
+                            </div>
+                          <div class="ag-courses_item">
+                            <a href="#" class="ag-courses-item_link">
+                              <div class="ag-courses-item_bg"></div>
+
+                              <div class="ag-courses-item_title">
+                              Join us on this transformative journey as we redifine the field of radiology and improve patient outcomes.
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+    </div>
+
+            <div id="overlay-cont">
+                <div class="row">
+                    <div class="col-md-6 overlay-text" id="overlay-col">
+                        <h3>About Us</h3>
+                        <p>At RadioX, we have assembled a team of passionate individuals dedicated to improving healthcare through technology. Meet our talented team members who bring a diverse range of expertise in AI, medical imaging, and software development. We are also proud to partner with
+                            leading technical experts who provide invaluable support and guidance in realizing our vision. Together, we are committed to delivering innovative solutions that make a positive impact on patient care.
+                        </p>
+                    </div>
+                    <div class="col-md-6" id="overlay-col">
+                        <img src="images/Radiography-bro.png" class="launch-image" alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function switchVisible() {
+                if (document.getElementById('main-cont')) {
+
+                    if (document.getElementById('main-cont').style.display == 'none') {
+                        document.getElementById('main-cont').style.display = 'block';
+                        document.getElementById('overlay-cont').style.display = 'none';
+                    } else {
+                        document.getElementById('main-cont').style.display = 'none';
+                        document.getElementById('overlay-cont').style.display = 'block';
+                    }
+                }
+            }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    </body>
+</html>
