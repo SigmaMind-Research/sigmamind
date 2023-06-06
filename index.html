@@ -13,22 +13,28 @@
             <h2 class="navbar-brand">RADIO-X</h2>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <button type="button" onclick="callEff()" class="btn btn-light" id="bottom">ABOUT</button>
+                   <a class="abt-button" href="about.html"><b>ABOUT</b></a> 
                 </li>
             </ul>
         </nav>
         <div class="container">
             <div class="row" id="main-cont">
                     <div class="col-lg text-col">
+                         <!-- <div class="bgc"></div> -->
                         <h1>Coming Soon....</h1>
                         <p class="intro-con"> Discover the future of chest X-ray analysis with RadioX <br> </p>
                     </div>
+                    <div class="col-lg order-first order-lg-last">
+                        <img src="images/rock.gif" alt="a gif">
+                    </div>
+            </div>
+            <div class="row">
                   <div class="ag-courses_box">
                     <div class="ag-courses_item">
                       <a href="#" class="ag-courses-item_link">
                         <div class="ag-courses-item_bg"></div>
                         <div class="ag-courses-item_title">
-                        Our revolutionary AI-powered app leverages cutting edge AI technology to predict  and analyze chest diseases with unmatched accuracy and speed.
+                        Our revolutionary AI-powered app leverages cutting edge AI technology to predict and analyze chest diseases with unmatched accuracy and speed.
                         </div>
                       </a>
                     </div>
@@ -50,49 +56,7 @@
                     </div>
                   </div>
             </div>
-
-            <div id="overlay-cont">
-                <div class="row">
-                    <div class="col-xl-6 overlay-text" id="overlay-col">
-                        <h3>About Us</h3>
-                        <p>At RadioX, we have assembled a team of passionate individuals dedicated to improving healthcare through technology. Meet our talented team members who bring a diverse range of expertise in AI, medical imaging, and software development. We are also proud to partner with
-                            leading technical experts who provide invaluable support and guidance in realizing our vision. Together, we are committed to delivering innovative solutions that make a positive impact on patient care.
-                        </p>
-                    </div>
-                    <div class="col-xl-6" id="overlay-col">
-                        <img src="images/Radiography-bro.png" class="launch-image" alt="image">
-                    </div>
-                </div>
-            </div>
-            <div id="transition-cont">
-                   <div class="bottom-layer"></div>
-                   <div class="bottom-layer bottom-layer--2"></div>
-                   <div class="bottom-layer bottom-layer--3"></div>
-            </div>
-        </div>
-        <script>
-          function callEff(){  
-            document.getElementById('transition-cont').style.display='block'
-             setTimeout(transitionEffect,10);
-          }
-          function transitionEffect() { 
-            var layers = document.querySelectorAll(".bottom-layer");
-            for (const layer of layers) {
-              setTimeout(switchVisible, 900);
-              layer.classList.toggle("active");
-            }
-          }
-          function switchVisible() {
-              if (document.getElementById('main-cont').style.display == 'none') {
-                document.getElementById('main-cont').style.display = 'block';
-                document.getElementById('overlay-cont').style.display = 'none';
-              } else {
-                document.getElementById('main-cont').style.display = 'none';
-                document.getElementById('overlay-cont').style.display = 'block';
-                document.getElementById('transition-cont').style.display='none'
-              }
-            }
-        </script>
+          </div>
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     </body>

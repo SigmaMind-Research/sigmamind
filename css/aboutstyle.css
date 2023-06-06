@@ -1,0 +1,60 @@
+html{
+  overflow:auto;
+  min-width: auto;
+  min-height: 100vh;
+  margin:0;
+}
+body {
+  background-image:linear-gradient(140deg, rgba(0,0,0,1) 20%, rgba(31,140,114,1) 59% );
+  font-family: "Space Grotesk", sans-serif;
+  background-size: cover;
+  
+}
+.navbar{
+  padding:20px;
+  /* background-color: black; */
+}
+.navbar-brand {
+  color:white;
+  font-family:sans-serif;
+  font-weight: bold;
+  font-size: 33px;
+}
+
+.button{
+  font-weight: bold;
+  padding: 8px 18px;
+  margin:10px;
+  border: none;
+  color:black;
+}
+
+.container{
+  display:flex;
+  /* background-color: white; */
+  /* backdrop-filter:blur(50px); */
+  /* background-size: cover; */
+  min-width:100%;
+  overflow: auto;
+}
+
+#cont-col{
+  margin-top:5%;
+  color:white;
+  text-align: center;
+}
+
+.cont-text{
+  padding: 8% 6% 0;
+  text-align: justify;
+}
+h2{
+  font-size: 60px;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+p{
+  font-size: 27px;
+  margin-bottom: 0;
+}
+
