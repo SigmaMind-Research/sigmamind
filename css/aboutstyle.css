@@ -1,14 +1,13 @@
 html{
   overflow:auto;
-  min-width: auto;
-  min-height: 100vh;
-  margin:0;
 }
+
 body {
-  background-image:linear-gradient(140deg, rgba(0,0,0,1) 20%, rgba(31,140,114,1) 59% );
+  min-height: 100vh;
+  background-image:linear-gradient(140deg, rgba(0,0,0,1) 20%, #1db468 59% );
   font-family: "Space Grotesk", sans-serif;
   background-size: cover;
-  
+  background-repeat: no-repeat;
 }
 .navbar{
   padding:20px;
@@ -26,24 +25,22 @@ body {
   padding: 8px 18px;
   margin:10px;
   border: none;
-  color:black;
+  color:white;
   font-size: 20px;
 }
 a,
 a:hover,
 a:visited,
 a:active{
-  color:black;
+  color:white;
   text-decoration: none;
 }
 
 .container{
   display:flex;
-  /* background-color: white; */
-  /* backdrop-filter:blur(50px); */
-  /* background-size: cover; */
   min-width:100%;
-  overflow: auto;
+  overflow-y: scroll;
+  padding-bottom: 60px;
 }
 
 #cont-col{
@@ -53,16 +50,44 @@ a:active{
 }
 
 .cont-text{
-  padding: 8% 6% 0;
+  padding: 7% 6% 0;
   text-align: justify;
 }
 h2{
   font-size: 60px;
   font-weight: bold;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
 }
 p{
   font-size: 27px;
-  margin-bottom: 0;
 }
 
+footer{
+  position:fixed;
+  bottom:0;
+  width:100%;
+  height:60px;
+}
+.footer-class{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#footer-text{
+  font-size: 15px;
+  padding-left:5px;
+  font-weight: bold;
+}
+i{
+  color: #ffffff;
+}
+
+@media only screen and (min-width:470px) {
+  body{
+  width:100%;
+  margin:0;
+  }
+  /* footer{
+    position:absolute;
+  } */
+}
+/* rgba(31,140,114,1) */
