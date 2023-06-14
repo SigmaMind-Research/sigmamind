@@ -9,10 +9,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.navbar{
-  padding:20px;
-  /* background-color: black; */
-}
+
 .navbar-brand {
   color:white;
   font-family:sans-serif;
@@ -21,12 +18,11 @@ body {
 }
 
 .button{
-  font-weight: bold;
-  padding: 8px 18px;
-  margin:10px;
+  /* font-weight: bold; */
+  margin:25px;
   border: none;
   color:white;
-  font-size: 20px;
+  font-size: 30px;
 }
 a,
 a:hover,
