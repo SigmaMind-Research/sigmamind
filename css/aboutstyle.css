@@ -1,0 +1,128 @@
+html{
+  overflow:auto;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(../images/step.png);
+  /* background-image:linear-gradient(140deg, rgba(0,0,0,1) 20%, #1db468 59% ); */
+  font-family: "Space Grotesk", sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar-brand {
+  color:white;
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+
+.container{
+  display:flex;
+  flex-direction: column;
+  min-width:100%;
+  padding-bottom: 60px;
+}
+
+#cont-col{
+  margin-top:5%;
+  color:white;
+  text-align: center;
+}
+
+.cont-text{
+  padding: 7% 6% 0;
+  text-align: justify;
+}
+h2{
+  font-size: 60px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+p{
+  font-size: 28px;
+}
+
+.logo-cont{
+  display:flex;
+  align-items: center;
+  justify-content:center;
+}
+
+.logocontents{
+  display: flex;
+  padding-top: 10%;
+  position:absolute;
+  bottom:12%;
+}
+.text p{
+  color:white;
+  padding-right:10px;
+  font-size: 1rem;
+}
+.microimg{
+  padding-right:10px;
+  width:150px;
+}
+
+footer{
+  position:fixed;
+  bottom:0;
+  width:100%;
+}
+.footer-class{
+  background-color: #100F0F;
+  padding:3%;
+}
+
+#footer-text{
+  font-size: 15px;
+  padding-left:5px;
+  font-weight: bold;
+}
+
+a,
+a:hover,
+a:visited,
+a:active
+{
+  color: white;
+  text-decoration: none;
+}
+
+.abt-button{
+  margin:25px;
+  border: none;
+  font-size: 1.8rem;
+}
+i{
+  color: #ffffff;
+}
+.com-name{
+  color:white;
+}
+
+
+@media only screen and (max-width:470px) {
+  body{
+  width:100%;
+  margin:0;
+  overflow-x: hidden;
+  }
+    .navbar-brand {
+  font-size: 1.8rem;
+}
+  .abt-button{
+      margin:0;
+  font-size: 1.2rem;
+  }
+  h2 h4{
+    font-size: 3rem;
+  }
+  p{
+    font-size: 1rem;
+  }
+  .microimg{
+    width:100px;
+  }
+}
