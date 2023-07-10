@@ -6,12 +6,13 @@ body {
   background-repeat: no-repeat;
   bottom:0;
   overflow-x: hidden;
+  height: auto;
 }
 
 .navbar-brand {
   color:white;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 .container{
@@ -24,8 +25,8 @@ body {
 .abt-button{
   margin:25px;
   border: none;
-  font-size: 30px;
-  /* font-weight: 800; */
+  font-size: 1.8rem;
+  justify-content: baseline;
 }
 a,
 a:hover,
@@ -42,7 +43,6 @@ a:hover{
 img{
   width:80%;
   padding-top: 8%;
-  margin-left: 8%;
 }
 
 .text-col{
@@ -71,7 +71,7 @@ h1{
   -webkit-text-fill-color: transparent;
   animation: textclip 3s reverse infinite;
   display: inline-block;
-  font-size: 70px;
+  font-size: 4.4rem;
 }
 @keyframes textclip {
   to {
@@ -83,11 +83,11 @@ p{
   padding: 10px;
   margin-left: 20px;
   padding-top: 15px;
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 .intro-con{
   margin-left:20px;
-  font-size: 26px;
+  font-size: 1.6rem;
   font-weight: bold;
   color: white;
 }
@@ -138,7 +138,8 @@ p{
   min-height: 87px;
   margin: 0 0 25px;
   overflow: hidden;
-  font-size: 18.5px;
+  font-size: 1.15em;
+  text-align: center;
   color: #FFF;
   z-index: 2;
   position: relative;
@@ -162,4 +163,41 @@ p{
 }
 .ag-courses_item:nth-child(3n) .ag-courses-item_bg {
   background-color: #e44002;
+}
+
+@media only screen and (max-width: 680px) {
+    h1{
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .intro-con{
+  margin-left:0;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+}
+  img{
+    width: 100%;
+    margin-top: 10%;
+    padding-bottom: 5%;
+  }
+}
+
+@media only screen and (max-width: 470px){
+  .navbar-brand {
+  font-size: 1.8rem;
+}
+
+h1{
+  font-size: 1.7rem;
+
+}
+.row{
+  margin: 8% 4%;
+}
+  .abt-button{
+      margin:0;
+  font-size: 1.2rem;
+  }
 }
