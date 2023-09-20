@@ -9,10 +9,16 @@ body {
   height: auto;
 }
 
+.logo-img{
+  width: 8%;
+  padding-top:0;
+}
+
 .navbar-brand {
   color:white;
   font-weight: bold;
   font-size: 2.5rem;
+  max-width:fit-content;
 }
 
 .container{
@@ -47,7 +53,7 @@ img{
 
 .text-col{
   padding-left:8%;
-  margin-top: 12%;
+  margin-top: 10%;
   color:white;
 }
 h1{
@@ -71,7 +77,7 @@ h1{
   -webkit-text-fill-color: transparent;
   animation: textclip 3s reverse infinite;
   display: inline-block;
-  font-size: 4.4rem;
+  font-size: 3.6rem;
 }
 @keyframes textclip {
   to {
@@ -166,6 +172,9 @@ p{
 }
 
 @media only screen and (max-width: 680px) {
+  .navbar-brand{
+    width: min-content;
+  }
     h1{
     margin: 0;
     font-size: 2.5rem;
@@ -182,15 +191,25 @@ p{
     margin-top: 10%;
     padding-bottom: 5%;
   }
+  .logo-img{
+  width:20%;
+  margin-top: 5%;
+}
 }
 
 @media only screen and (max-width: 470px){
-  .navbar-brand {
-  font-size: 1.8rem;
-}
 
+.navbar-brand {
+  font-size: 1.5rem;
+  width: min-content;
+}
+.abt-button{
+  margin-top:0;
+
+}
 h1{
-  font-size: 1.7rem;
+  text-align:center;
+  font-size: 2rem;
 
 }
 .row{
@@ -200,4 +219,8 @@ h1{
       margin:0;
   font-size: 1.2rem;
   }
+.logo-img{
+  width:20%;
+  margin-top: 5%;
+}
 }
