@@ -11,10 +11,16 @@ body {
   background-repeat: no-repeat;
 }
 
+.logo-img{
+  width: 8%;
+  padding-top:0;
+}
+
 .navbar-brand {
   color:white;
   font-weight: bold;
   font-size: 2.4rem;
+  max-width:fit-content;
 }
 
 .container{
@@ -25,7 +31,6 @@ body {
 }
 
 #cont-col{
-  margin-top:5%;
   color:white;
   text-align: center;
 }
@@ -53,7 +58,7 @@ p{
   display: flex;
   padding-top: 10%;
   position:absolute;
-  bottom:12%;
+  bottom:10%;
 }
 .text p{
   color:white;
@@ -90,7 +95,7 @@ a:active
   text-decoration: none;
 }
 
-.abt-button{
+.hm-button{
   margin:25px;
   border: none;
   font-size: 1.8rem;
@@ -102,27 +107,51 @@ i{
   color:white;
 }
 
-
-@media only screen and (max-width:470px) {
-  body{
-  width:100%;
-  margin:0;
-  overflow-x: hidden;
-  }
-    .navbar-brand {
-  font-size: 1.8rem;
+@media only screen and (max-width:850px) {
+.navbar-brand {
+  font-size: 1.5rem;
+  width: min-content;
 }
-  .abt-button{
-      margin:0;
-  font-size: 1.2rem;
-  }
-  h2 h4{
-    font-size: 3rem;
-  }
-  p{
-    font-size: 1rem;
-  }
-  .microimg{
-    width:100px;
-  }
+.hm-button{
+margin:0;
+font-size: 1.2rem;
+}
+p{
+  font-size: 1.5rem;
+}
+.microimg{
+  width:100px;
+}
+.logo-img{
+  width:20%;
+}
+
+}
+
+@media only screen and (max-width:530px) {
+body{
+width:100%;
+margin:0;
+overflow-x: hidden;
+}
+.navbar-brand {
+  font-size: 1.5rem;
+  width: min-content;
+}
+.hm-button{
+margin:0;
+font-size: 1.2rem;
+}
+h2 {
+  font-size: 3rem;
+}
+p{
+  font-size: 1rem;
+}
+.microimg{
+  width:100px;
+}
+.logo-img{
+  width:20%;
+}
 }
