@@ -20,6 +20,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
   </head>
   <body>
     <!-- <nav class="navbar navbar-expand-sm">
@@ -35,15 +40,18 @@
 
     <!-- START of Navbar -->
 
-    <nav class="navbar">
+    <nav>
+      <input type="checkbox" id="check" name="" value="" />
+      <label for="check" class="checkbtn">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <label class="logo">
+        <a href="index.html">
+          <img class="logo-img" src="./images/logo.png" />
+          <h2 class="navbar-brand">SigmaMind</h2>
+        </a>
+      </label>
       <ul>
-        <li>
-          <a href="index.html"
-            ><h2 class="navbar-brand">
-              <img class="logo-img" src="./images/logo.png" /> SigmaMind
-            </h2></a
-          >
-        </li>
         <li><a href="index.html">Research</a></li>
         <li><a href="index.html">RadioX</a></li>
         <li><a href="index.html">Blog</a></li>
@@ -56,7 +64,6 @@
     <div class="container">
       <div class="row" id="main-cont">
         <div class="col-lg text-col">
-          <!-- <div class="bgc"></div> -->
           <h1>Elevate Radiology with RadioX</h1>
           <p class="intro-con">
             Discover the future of chest X-ray analysis with RadioX <br />
