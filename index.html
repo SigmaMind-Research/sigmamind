@@ -38,29 +38,51 @@
     </nav> -->
 
     <!-- START of Navbar -->
+    <header>
+      <nav>
+        <div class="logo">
+          <input type="checkbox" id="btn" />
+          <label for="btn" class="icon">
+            <span class="fa-solid fa-bars"></span>
+          </label>
+          <a href="index.html">
+            <img src="images/logo.png" alt="logo" srcset="" />
+            <h2 class="logo__head">SigmaMind</h2>
+          </a>
+        </div>
 
-    <nav>
-      <input type="checkbox" id="check" name="" value="" />
-      <label for="check" class="checkbtn">
-        <i class="fa-solid fa-bars"></i>
-      </label>
-      <label class="logo">
-        <a href="index.html">
-          <img class="logo-img" src="./images/logo.png" />
-          <h2 class="navbar-brand">SigmaMind</h2>
-        </a>
-      </label>
-      <ul>
-        <li><a href="index.html">Research</a></li>
-        <li><a href="index.html">RadioX</a></li>
-        <li><a href="index.html">Blog</a></li>
-        <li><a href="index.html">About</a></li>
-      </ul>
-    </nav>
+        <ul class="links">
+          <li>
+            <input type="checkbox" id="btn-1" />
+            <label for="btn-1" class="show">Research +</label>
+            <a href="index.html">Research</a>
+            <ul>
+              <li><a href="#">something 1</a></li>
+              <li><a href="#">something 2</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html">RadioX</a></li>
+          <li>
+            <input type="checkbox" id="btn-1" />
+            <label for="btn-1" class="show">About +</label>
+            <a href="index.html">About</a>
+            <ul>
+              <li><a href="#">something 1</a></li>
+              <li><a href="#">something 2</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html">Blog</a></li>
+        </ul>
+
+        <div class="toggle">
+          <a href="#"><i class="fa-solid fa-bars"></i></a>
+        </div>
+      </nav>
+    </header>
 
     <!-- END of Navbar -->
 
-    <div class="container">
+    <!-- <div class="container">
       <div class="row" id="main-cont">
         <div class="col-lg text-col">
           <h1>Elevate Radiology with RadioX</h1>
@@ -105,7 +127,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

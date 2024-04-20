@@ -14,10 +14,174 @@ body {
   overflow-x: hidden;
   height: auto;
 }
+li {
+  list-style: none;
+}
 
+a,
+a:hover {
+  text-decoration: none;
+}
 /* Navbar Starts */
 
 nav {
+  background-color: black;
+}
+nav:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+nav a {
+  color: white;
+}
+.logo {
+  margin-left: 2rem;
+  float: left;
+
+  display: flex;
+  align-items: center;
+
+  height: 6rem;
+}
+.logo a {
+  display: flex;
+  align-items: center;
+}
+.logo__head {
+  margin-left: 1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.logo a:hover {
+  color: orange;
+}
+.logo img {
+  width: 10%;
+  margin: 0;
+}
+
+.links {
+  margin-bottom: 0;
+  line-height: 6rem;
+}
+nav ul {
+  float: right;
+  list-style: none;
+  /* display: inline-block; */
+
+  margin-right: 1rem;
+  position: relative;
+}
+nav ul li {
+  /* float: left; */
+  display: inline-block;
+
+  /* background: black; */
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+}
+nav ul li a {
+  padding: 0.5rem;
+}
+nav ul li a:hover {
+  color: #3ecd5e;
+  /* box-shadow: 0 0 5px orange; */
+}
+nav ul ul {
+  position: absolute;
+  /* top: 5rem; */
+  background: black;
+  opacity: 0;
+  border-top: 0.1rem solid orange;
+  visibility: hidden;
+  transition: top 0.3s;
+}
+nav ul li:hover > ul {
+  /* top: 5rem; */
+  opacity: 1;
+  visibility: visible;
+}
+nav ul ul li {
+  position: relative;
+  margin: 0px;
+  width: 9rem;
+  float: none;
+  display: block;
+}
+nav ul ul li a {
+  line-height: 4rem;
+  /* box-shadow: none; */
+}
+.toggle {
+  color: white;
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+.show,
+.icon,
+input {
+  display: none;
+}
+@media only screen and (max-width: 1220px) {
+  nav ul {
+    float: left;
+    margin-right: 0px;
+  }
+  nav .logo {
+    padding-left: 1rem;
+    width: 100%;
+  }
+  nav ul li,
+  nav ul ul li {
+    display: block;
+    width: 100%;
+  }
+  .links {
+    margin-left: 2rem;
+  }
+  nav ul ul {
+    top: 3rem;
+    position: static;
+    border-top: none;
+    float: none;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  .show {
+    display: block;
+    color: white;
+    padding-left: 0 1rem;
+    line-height: 5rem;
+    cursor: pointer;
+  }
+  nav ul li :hover {
+    /* box-shadow: none; */
+    color: #3ecd5e;
+  }
+  nav ul ul a {
+    padding-left: 4rem;
+  }
+  .icon {
+    display: block;
+    color: white;
+    position: absolute;
+    right: 3rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  /* .show + a, ul{
+    display: none;
+  } */
+  [id^="btn"]:checked + ul {
+    display: block;
+  }
+}
+
+/* nav {
   background-color: black;
   width: 100%;
   height: 5rem;
@@ -65,7 +229,7 @@ nav ul li a {
 }
 #check:checked ~ ul {
   left: 0;
-}
+} */
 
 /* nav a {
   height: 100%;
@@ -109,10 +273,10 @@ a:hover{
   justify-content: baseline;
 }
 
-img {
+/* img {
   width: 80%;
   padding-top: 8%;
-}
+} */
 
 .text-col {
   padding-left: 8%;
@@ -234,23 +398,6 @@ p {
 }
 .ag-courses_item:nth-child(3n) .ag-courses-item_bg {
   background-color: #e44002;
-}
-
-@media only screen and (max-width: 1200px) {
-  .checkbtn {
-    display: block;
-  }
-  nav ul {
-    width: 100%;
-    height: 100vh;
-    background: black;
-    top: 5rem;
-    left: -100%;
-  }
-  nav ul li {
-    display: block;
-    text-align: center;
-  }
 }
 
 @media only screen and (max-width: 680px) {
