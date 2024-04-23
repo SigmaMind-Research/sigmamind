@@ -6,8 +6,7 @@ const cross = document.querySelector(".cross");
 menuToggle.addEventListener("click", function () {
   links.classList.toggle("open");
 
-  sandwitch.classList.toggle("open");
-  cross.classList.toggle("open");
+  menuToggle.classList.toggle("active");
 });
 
 // ---------------------------------------------
