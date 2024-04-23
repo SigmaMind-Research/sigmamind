@@ -73,10 +73,12 @@ header {
 }
 header ul {
   position: relative;
+  list-style: none;
+  display: flex;
 }
 header ul li {
   position: relative;
-  float: left;
+  /* float: left; */
 }
 header ul li a {
   color: white;
@@ -97,16 +99,24 @@ header ul li a:hover {
   position: absolute;
 }
 header ul li ul {
+  flex-direction: column;
   left: 0;
   width: 200px;
   /* background: var(--ash); */
-  display: none;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition:
+    opacity 150ms ease-out,
+    transform 150ms ease-out;
 }
 header ul li:hover ul {
-  display: block;
+  opacity: 1;
+  transform: translateY(0px);
+  pointer-events: auto;
 }
 header nav ul li:hover ul li {
-  background: var(--accent);
+  background: var(--ash);
 }
 header ul li ul li {
   position: relative;
@@ -143,7 +153,7 @@ header ul li ul li {
 
     /* background: rgba(255, 255, 255, 0.1); */
   }
-  header ul {
+  .links {
     margin: 0px 20px;
     display: none;
   }
@@ -152,29 +162,52 @@ header ul li ul li {
     left: 0%;
     /* transition: left 5s ease-in-out; */
 
-    animation: right-to-left 700ms ease-in-out;
+    animation: down 200ms ease-in-out;
   }
-  @keyframes right-to-left {
+  @keyframes down {
     0% {
-      transform: translateX(100%);
+      transform: translateY(-30px);
       opacity: 0;
     }
     100% {
-      transform: translateX(0%);
+      transform: translateY(0px);
       opacity: 1;
     }
   }
+
   header nav ul li {
     width: 100%;
+    border-top: 1px solid var(--creme);
+  }
+  header nav ul li:first-child {
+    border-top: none;
   }
   .dropdown-menu {
     position: relative;
+    display: none;
   }
-
+  .dropdown-menu.open {
+    display: block;
+  }
+  header ul li ul {
+    transform: translateX(0px);
+    transition: transform 150ms ease-out;
+  }
+  header ul li:hover ul {
+    transform: translateX(20px);
+  }
   header nav ul li ul {
-    left: 0;
+    opacity: 1;
     width: auto;
-    margin: 0 20px;
+    margin: 0px 20px;
+  }
+  header ul li ul li {
+    position: relative;
+    width: 100%;
+    border: none;
+  }
+  header ul li ul li:first-child {
+    border-top: 1px solid var(--creme-2);
   }
   .menu__toggle {
     margin-right: 20px;
