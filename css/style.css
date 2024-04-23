@@ -129,10 +129,6 @@ header ul li ul li {
   color: white;
   cursor: pointer;
 }
-.cross {
-  font-size: 2rem;
-  display: none;
-}
 .menu__toggle a {
   color: white;
 }
@@ -160,7 +156,7 @@ header ul li ul li {
   .links.open {
     display: block;
     left: 0%;
-    /* transition: left 5s ease-in-out; */
+    /* transition: transform 200ms ease-in-out; */
 
     animation: down 200ms ease-in-out;
   }
@@ -213,58 +209,60 @@ header ul li ul li {
     margin-right: 20px;
     display: flex;
     align-items: center;
-    position: relative;
   }
-  .sandwitch.open {
-    display: none;
-    /* animation: sand 700ms ease-in-out forwards; */
-  }
-  .cross.open {
-    display: block;
-    /* animation: sand-reverse 700ms ease-in-out reverse; */
-  }
-  @keyframes sand {
-    0% {
-      opacity: 1;
-      display: block;
-    }
-    100% {
-      opacity: 0;
-      display: none;
-    }
-  }
-  @keyframes sand-reverse {
-    0% {
-      opacity: 0;
-      display: none;
-    }
-    100% {
-      opacity: 1;
-      display: block;
-    }
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  header {
-    padding: 0px 5px;
-  }
-  .logo {
-    margin-left: 10px;
-  }
-  .logo img {
-    width: 18%;
-  }
-  .logo__head {
-    /* margin-left: 1rem; */
-    font-size: 2rem;
-    color: white;
-    font: bold;
-  }
-  .menu__toggle {
-    font-size: 1.3rem;
+  .sandwitch {
+    opacity: 1;
+    /* animation: sand 150ms ease-in-out; */
   }
   .cross {
-    font-size: 1.5rem;
+    position: absolute;
+    font-size: 2rem;
+    opacity: 0;
+    /* display: none; */
+    transform: translateY(-5px);
+    /* display: none; */
+    /* opacity: 0; */
+    /* display: none; */
+  }
+  .sandwitch.open {
+    /* animation: sand 250ms ease-in-out; */
+    opacity: 0;
+    transform: translateX(20px);
+    transition:
+      opacity 200ms ease-out,
+      transform 300ms ease-out;
+    /* display: none; */
+  }
+  .cross.open {
+    /* display: block; */
+    opacity: 1;
+    transform: translateY(0px);
+    transition:
+      opacity 200ms ease-in,
+      transform 300ms ease-out;
+  }
+
+  @media only screen and (max-width: 500px) {
+    header {
+      padding: 0px 5px;
+    }
+    .logo {
+      margin-left: 10px;
+    }
+    .logo img {
+      width: 18%;
+    }
+    .logo__head {
+      /* margin-left: 1rem; */
+      font-size: 2rem;
+      color: white;
+      font: bold;
+    }
+    .menu__toggle {
+      font-size: 1.3rem;
+    }
+    .cross {
+      font-size: 1.5rem;
+    }
   }
 }
