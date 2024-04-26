@@ -5,7 +5,7 @@
 }
 
 :root {
-  --ash: #575761;
+  --ash: #7f7f7f;
   --creme: #f4ebd9;
   --accent: #129490;
 
@@ -27,7 +27,11 @@ body {
   font-family: "roboto", sans-serif;
 
   scroll-behavior: smooth;
-  background-color: var(--creme);
+  /* background-color: var(--gradient-3); */
+  background: url(/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 
   display: flex;
   flex-direction: column;
@@ -51,14 +55,25 @@ a:visited {
 /* Navbar Starts */
 
 header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  background: black;
-  padding: 0 100px;
+  /* background: black; */
+  padding: 10px 100px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  transition: 600ms;
+  z-index: 10000;
+}
+header.sticky {
+  padding: 0px 100px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 3);
 }
 .logo {
   /* background: #acb1d6; */
@@ -151,6 +166,9 @@ header ul li ul li {
 /* Respnsive */
 @media only screen and (max-width: 1000px) {
   header {
+    padding: 0px 30px;
+  }
+  header.sticky {
     padding: 0px 20px;
   }
   .logo {
@@ -161,8 +179,6 @@ header ul li ul li {
     width: 100%;
     top: 100%;
     left: 0;
-    background: var(--ash);
-
     /* background: rgba(255, 255, 255, 0.1); */
   }
   .links {
@@ -234,29 +250,31 @@ header ul li ul li {
   .menu__toggle.active .bar:nth-child(3) {
     transform: translateY(-8.7px) rotate(-45deg);
   }
-
-  @media only screen and (max-width: 500px) {
-    header {
-      padding: 0px 5px;
-    }
-    .logo {
-      margin-left: 10px;
-    }
-    .logo img {
-      width: 18%;
-    }
-    .logo__head {
-      /* margin-left: 1rem; */
-      font-size: 2rem;
-      color: white;
-      font: bold;
-    }
-    .menu__toggle {
-      font-size: 1.3rem;
-    }
-    .cross {
-      font-size: 1.5rem;
-    }
+}
+@media only screen and (max-width: 500px) {
+  header {
+    padding: 0px 10px;
+  }
+  header.sticky {
+    padding: 0px 5px;
+  }
+  .logo {
+    margin-left: 10px;
+  }
+  .logo img {
+    width: 18%;
+  }
+  .logo__head {
+    /* margin-left: 1rem; */
+    font-size: 2rem;
+    color: white;
+    font: bold;
+  }
+  .menu__toggle {
+    font-size: 1.3rem;
+  }
+  .cross {
+    font-size: 1.5rem;
   }
 }
 
@@ -264,13 +282,41 @@ header ul li ul li {
 
 /* -------- Main Starts Here ------------- */
 
-main {
+.hero {
+  position: relative;
   width: 100%;
+  height: 100vh;
   /* min-height: calc(100vh - 71px - 285px); */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+  font-family: "Poppins", sans-serif;
 }
-main p {
-  line-height: 100px;
+.hero-text {
+  flex-basis: 70%;
+  padding: 100px 50px 0px;
 }
+.hero-text h1 {
+  font-weight: 850;
+  font-size: 100px;
+  line-height: 130px;
+  font-stretch: ultra-expanded;
+  text-transform: uppercase;
+}
+.hero-text p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+.hero-img {
+  flex-basis: 30%;
+}
+
+/* -------- Main Ends Here ------------- */
+
 /* -------- Footer Starts Here ------------- */
 
 footer {
@@ -310,7 +356,7 @@ footer {
 .ft-logo img {
   width: 14%;
 }
-.logo__foot{
+.logo__foot {
   font-size: 28px;
 }
 .footer-links {
@@ -360,7 +406,7 @@ footer {
     gap: 3rem;
   }
 }
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 750px) {
   .ft-logo img {
     width: 11%;
   }
