@@ -29,6 +29,7 @@ body {
   scroll-behavior: smooth;
   /* background-color: var(--gradient-3); */
   background: url(/bg.jpg);
+  /* background: url(/layer1.svg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -36,6 +37,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+
+  
 }
 
 ul,
@@ -71,7 +74,7 @@ header {
 }
 header.sticky {
   padding: 0px 100px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(8px);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 3);
 }
@@ -103,10 +106,14 @@ header ul {
   position: relative;
   list-style: none;
   display: flex;
+
+  gap: 2rem;
 }
 header ul li {
   position: relative;
   /* float: left; */
+  border: 1px solid var(--accent);
+  border-radius: 50px;
 }
 header ul li a {
   color: white;
@@ -116,12 +123,17 @@ header ul li a {
   display: flex;
   justify-content: space-between;
   /* align-items: center; */
+
+  /* border: 1px solid var(--accent);
+  border-radius: 50px; */
 }
 header ul li a ion-icon {
   margin-left: 0.5rem;
 }
-header ul li a:hover {
+header ul li:hover {
   background: var(--accent);
+  scale: 1.09;
+  transition: scale 200ms ease-in-out;
 }
 .dropdown-menu {
   position: absolute;
@@ -135,16 +147,21 @@ header ul li ul {
   pointer-events: none;
   transform: translateY(-10px);
   transition:
-    opacity 150ms ease-out,
-    transform 150ms ease-out;
+    opacity 200ms ease-out,
+    transform 200ms ease-out;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  border-radius: 50px;
+  gap: 0.5rem;
+  /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 3); */
 }
 header ul li:hover ul {
   opacity: 1;
   transform: translateY(0px);
   pointer-events: auto;
 }
-header nav ul li:hover ul li {
-  background: var(--ash);
+header nav ul li ul li:hover {
+  /* background: var(--ash); */
 }
 header ul li ul li {
   position: relative;
@@ -171,14 +188,28 @@ header ul li ul li {
   header.sticky {
     padding: 0px 20px;
   }
+  .header.head-open{
+    box-shadow: none;
+  }
   .logo {
     margin-left: 20px;
   }
   header nav {
     position: absolute;
+  }
+  .nav-open {
     width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    left: 0;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
     top: 100%;
     left: 0;
+    transition: backdrop-filter 200ms ease-in-out;
     /* background: rgba(255, 255, 255, 0.1); */
   }
   .links {
@@ -202,13 +233,13 @@ header ul li ul li {
       opacity: 1;
     }
   }
-
+  header ul li:hover {
+    background: var(--accent);
+    scale: 1.03;
+    transition: scale 200ms ease-in-out;
+  }
   header nav ul li {
     width: 100%;
-    border-top: 1px solid var(--creme);
-  }
-  header nav ul li:first-child {
-    border-top: none;
   }
   .dropdown-menu {
     position: relative;
@@ -218,12 +249,9 @@ header ul li ul li {
     display: block;
   }
   header ul li ul {
-    transform: translateX(0px);
     transition: transform 150ms ease-out;
   }
-  header ul li:hover ul {
-    transform: translateX(20px);
-  }
+  
   header nav ul li ul {
     opacity: 1;
     width: auto;
@@ -234,9 +262,9 @@ header ul li ul li {
     width: 100%;
     border: none;
   }
-  header ul li ul li:first-child {
+  /* header ul li ul li:first-child {
     border-top: 1px solid var(--creme-2);
-  }
+  } */
   .menu__toggle {
     display: block;
     margin-right: 30px;
@@ -287,6 +315,9 @@ header ul li ul li {
   width: 100%;
   height: 100vh;
   /* min-height: calc(100vh - 71px - 285px); */
+  background: url(/layer1.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
 
   display: flex;
   align-items: center;
@@ -314,7 +345,27 @@ header ul li ul li {
 .hero-img {
   flex-basis: 30%;
 }
-
+@media only screen and (max-width: 700px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero-text h1 {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+  .hero-text p {
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .hero-text h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  .hero-text p {
+    font-size: 15px;
+  }
+}
 /* -------- Main Ends Here ------------- */
 
 /* -------- Footer Starts Here ------------- */

@@ -8,12 +8,13 @@ function sticky_header() {
 function header_dropdown() {
   const menuToggle = document.querySelector(".menu__toggle");
   const links = document.querySelector(".links");
-  const sandwitch = document.querySelector(".sandwitch");
-  const cross = document.querySelector(".cross");
+  const nav = document.querySelector("nav");
+  const header = document.querySelector("header");
 
   menuToggle.addEventListener("click", function () {
     links.classList.toggle("open");
-
+    nav.classList.toggle("nav-open");
+    header.classList.toggle("head-open");
     menuToggle.classList.toggle("active");
   });
 
