@@ -24,7 +24,7 @@ function header_dropdown() {
   const dropdownM = document.querySelector(".dropdown-menu");
 
   dropdown.addEventListener("click", function () {
-    dropdownM.classList.toggle("open");
+    dropdownM.classList.toggle("dr-open");
   });
 }
 

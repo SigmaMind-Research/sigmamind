@@ -37,8 +37,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-
-  
 }
 
 ul,
@@ -102,23 +100,23 @@ header.sticky {
   width: 20%;
   margin: 0;
 }
-header ul {
+.links {
   position: relative;
   list-style: none;
   display: flex;
 
-  gap: 2rem;
+  gap: 1rem;
 }
-header ul li {
+.links li {
   position: relative;
   /* float: left; */
   border: 1px solid var(--accent);
   border-radius: 50px;
 }
-header ul li a {
+.links a {
   color: white;
-  font-size: 1.1em;
-  padding: 23px 25px;
+  font-size: 1.1rem;
+  padding: 20px 25px;
 
   display: flex;
   justify-content: space-between;
@@ -127,20 +125,21 @@ header ul li a {
   /* border: 1px solid var(--accent);
   border-radius: 50px; */
 }
-header ul li a ion-icon {
+.links li a ion-icon {
   margin-left: 0.5rem;
 }
-header ul li:hover {
+.links li:hover {
   background: var(--accent);
   scale: 1.09;
   transition: scale 200ms ease-in-out;
 }
 .dropdown-menu {
   position: absolute;
+  padding-top: 0.5rem;
 }
-header ul li ul {
+.dropdown-menu ul {
   flex-direction: column;
-  left: 0;
+  /* left: 0; */
   width: 200px;
   /* background: var(--ash); */
   opacity: 0;
@@ -149,24 +148,18 @@ header ul li ul {
   transition:
     opacity 200ms ease-out,
     transform 200ms ease-out;
-  background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(8px);
   border-radius: 50px;
-  gap: 0.5rem;
   /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 3); */
 }
-header ul li:hover ul {
+.links li:hover .dropdown-menu ul {
   opacity: 1;
   transform: translateY(0px);
   pointer-events: auto;
 }
-header nav ul li ul li:hover {
-  /* background: var(--ash); */
-}
-header ul li ul li {
-  position: relative;
-  width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.19);
+.dropdown-menu li{
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  margin-bottom: 0.5rem;
 }
 .menu__toggle {
   display: none;
@@ -188,7 +181,7 @@ header ul li ul li {
   header.sticky {
     padding: 0px 20px;
   }
-  .header.head-open{
+  .header.head-open {
     box-shadow: none;
   }
   .logo {
@@ -203,24 +196,21 @@ header ul li ul li {
     background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(8px);
     left: 0;
+    flex-direction: column;
     display: flex;
     justify-content: center;
     /* align-items: center; */
-    flex-direction: column;
     top: 100%;
-    left: 0;
     transition: backdrop-filter 200ms ease-in-out;
     /* background: rgba(255, 255, 255, 0.1); */
   }
   .links {
+    width: 50%;
     margin: 0px 20px;
     display: none;
   }
   .links.open {
     display: block;
-    left: 0%;
-    /* transition: transform 200ms ease-in-out; */
-
     animation: down 200ms ease-in-out;
   }
   @keyframes down {
@@ -233,38 +223,54 @@ header ul li ul li {
       opacity: 1;
     }
   }
-  header ul li:hover {
-    background: var(--accent);
-    scale: 1.03;
+  /* header nav ul li {
+    width: 100%;
+  } */
+  .links li {
+    border: 2px solid var(--accent);
+    margin-bottom: 1rem;
+  }
+  .links li:hover {
+    scale: 1.04;
     transition: scale 200ms ease-in-out;
   }
-  header nav ul li {
-    width: 100%;
+  .dropdown-menu ul {
+    flex-direction: column;
+    /* left: 0; */
+    width: 200px;
+    /* background: var(--ash); */
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-10px);
+    transition:
+      opacity 200ms ease-out,
+      transform 200ms ease-out;
+    border-radius: 50px;
+    /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 3); */
+  }
+  .links li:hover .dropdown-menu ul {
+    opacity: 1;
+    transform: translateX(0px);
+    pointer-events: auto;
   }
   .dropdown-menu {
-    position: relative;
+    /* position: relative; */
     display: none;
+    right: -60%;
+    top:-0.5rem;
   }
-  .dropdown-menu.open {
+  .dropdown-menu {
+    position: absolute;
+    padding-top: -0.5rem;
+  }
+  .dropdown-menu.dr-open {
     display: block;
   }
-  header ul li ul {
-    transition: transform 150ms ease-out;
+  .dropdown-menu li{
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    /* margin-bottom: 0rem; */
   }
-  
-  header nav ul li ul {
-    opacity: 1;
-    width: auto;
-    margin: 0px 20px;
-  }
-  header ul li ul li {
-    position: relative;
-    width: 100%;
-    border: none;
-  }
-  /* header ul li ul li:first-child {
-    border-top: 1px solid var(--creme-2);
-  } */
   .menu__toggle {
     display: block;
     margin-right: 30px;
