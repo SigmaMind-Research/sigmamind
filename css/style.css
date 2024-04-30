@@ -228,7 +228,7 @@ header.sticky {
     display: none;
   }
   .links-li:hover .dropdown-menu.dr-open {
-    /* display: block; */
+    display: block;
     opacity: 1;
     pointer-events: auto;
   }
