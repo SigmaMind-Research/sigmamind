@@ -199,7 +199,7 @@ header.sticky {
     width: 100%;
     margin: 0px 0px;
     padding: 0px 10px;
-    
+
     display: none;
   }
   .links.open {
@@ -228,15 +228,23 @@ header.sticky {
     display: none;
   }
   .links-li:hover .dropdown-menu.dr-open {
-    display: block;
+    /* display: block; */
     opacity: 1;
     pointer-events: auto;
+  }
+  .dropdown-menu {
+    display: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition:
+      opacity 200ms ease-out,
+      transform 200ms ease-out;
   }
   .dropdown-menu.dr-open {
     position: relative;
     display: block;
     opacity: 1;
-    transition: opacity 200ms ease-out;
+    transform: translateY(0px);
   }
   .dropdown-menu ul {
     position: relative;
