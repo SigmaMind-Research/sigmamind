@@ -312,7 +312,6 @@ header.sticky {
   position: relative;
   width: 100%;
   height: 100vh;
-  /* min-height: calc(100vh - 71px - 285px); */
   /* background: url(/Design/Design1.svg); */
   /* background: url(/bg.jpg); */
   background: url(/images/Hero-bg.jpg);
