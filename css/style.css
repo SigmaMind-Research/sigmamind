@@ -218,10 +218,10 @@ header.sticky {
   }
   .links-li {
     margin-bottom: 1rem;
-    border-bottom: var(--accent) 1px solid;
+    /* border-bottom: var(--accent) 1px solid; */
   }
   .links-li:hover {
-    border-left: 2px solid var(--accent);
+    /* border-left: 2px solid var(--accent); */
     scale: 1;
   }
   .links-li:hover .dropdown-menu {
@@ -254,7 +254,7 @@ header.sticky {
     opacity: 1;
     margin-bottom: 0.5rem;
     padding-left: 20px;
-    border-bottom: var(--ash) 1px solid;
+    /* border-bottom: var(--ash) 1px solid; */
   }
   .dropdown-menu li:last-child {
     border-bottom: none;
