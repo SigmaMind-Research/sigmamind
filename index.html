@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SigmaMind</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -74,8 +75,9 @@
 
     <!-- END of Navbar -->
 
-    <!-- START ofMain Body -->
     <main>
+      <!-- START Hero Section Body -->
+
       <div class="hero">
         <div class="hero-text">
           <h1>Elevate Radiology with RadioX</h1>
@@ -83,14 +85,66 @@
         </div>
         <div class="hero-img"></div>
       </div>
-    </main>
 
-    <!-- END ofMain Body -->
+      <!-- END Hero Section Body -->
+
+      <!-- START of CARD Body -->
+
+      <div class="carousel-body">
+        <div class="carousel">
+          <div class="slide-container swipper">
+            <div class="slide-content">
+              <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                  <div class="image-content">
+                    <div class="card-image">
+                      <img src="images/Card/1.jpg" alt="" class="card-img" />
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <button class="button">Learn More</button>
+                  </div>
+                </div>
+
+                <div class="card swiper-slide">
+                  <div class="image-content">
+                    <div class="card-image">
+                      <img src="images/Card/2.jpg" alt="" class="card-img" />
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <button class="button">Learn More</button>
+                  </div>
+                </div>
+
+                <div class="card swiper-slide">
+                  <div class="image-content">
+                    <div class="card-image">
+                      <img src="images/Card/3.jpg" alt="" class="card-img" />
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <button class="button">Learn More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <div class="carousel-info"></div>
+      </div>
+
+      <!-- END of CARD Body -->
+    </main>
 
     <!-- START of Footer -->
 
     <footer>
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-1">
           <a href="index.html" class="ft-logo">
             <img src="images/logo-sm.png" alt="logo" srcset="" />
@@ -118,9 +172,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <hr />
+      <!-- <hr /> -->
       <div class="footerBottom">
         <div class="copyright">
           <p>copyright &copy; 2024 SigmaMind.</p>
@@ -139,5 +193,6 @@
     nomodule
     src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
   ></script>
+  <script src="JS/swiper-bundle.min.js"></script>
   <script type="module" src="JS/script.js"></script>
 </html>

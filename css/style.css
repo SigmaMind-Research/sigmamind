@@ -15,8 +15,9 @@
   --secondary-text: white;
 
   --gradient-1: #58a4b0;
-  --gradient-2: #373f51;
+  --gradient-2: #3e434e;
   --gradient-3: #1b1b1e;
+  --gradient-4: #1a1c1e;
 }
 
 html,
@@ -24,13 +25,13 @@ body {
   height: 100%;
   width: 100%;
   /* font-family: "open-sans", sans-serif; */
-  font-family: "roboto", sans-serif;
 
   scroll-behavior: smooth;
 
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  font-family: "roboto", sans-serif;
 }
 
 ul,
@@ -218,10 +219,8 @@ header.sticky {
   }
   .links-li {
     margin-bottom: 1rem;
-    /* border-bottom: var(--accent) 1px solid; */
   }
   .links-li:hover {
-    /* border-left: 2px solid var(--accent); */
     scale: 1;
   }
   .links-li:hover .dropdown-menu {
@@ -306,18 +305,28 @@ header.sticky {
 
 /* -------- Header Ends Here ------------- */
 
-/* -------- Main Starts Here ------------- */
+main {
+  position: relative;
+  /* overflow: hidden; */
+}
+
+/* -------- Hero Starts Here ------------- */
 
 .hero {
   position: relative;
-  width: 100%;
+  /* max-width: 1400px; */
+  margin: 0 auto;
+  /* width: 100vw; */
   height: 100vh;
   /* background: url(/Design/Design1.svg); */
   /* background: url(/bg.jpg); */
-  background: url("../images/Hero-bg.jpg");
+
+  /* background: url("../images/Hero-bg.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+
+  background: var(--gradient-4);
 
   display: flex;
   align-items: center;
@@ -328,7 +337,7 @@ header.sticky {
 }
 .hero-text {
   flex-basis: 70%;
-  padding: 100px 50px 0px;
+  padding: 100px 60px 0px;
 }
 .hero-text h1 {
   font-weight: 850;
@@ -336,7 +345,34 @@ header.sticky {
   line-height: 130px;
   font-stretch: ultra-expanded;
   text-transform: uppercase;
+
+  background-image: linear-gradient(
+    220deg,
+    /* #ACB1D6 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100% */ #ca411e 0%,
+    #f55283 20%,
+    #fbaf57 40%,
+    #4cc86e 60%,
+    #269bb4 80%,
+    #472a87 100%
+  );
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s reverse infinite;
+  word-spacing: 10px;
+  /* display: inline-block; */
 }
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
 .hero-text p {
   font-size: 20px;
   font-weight: 400;
@@ -367,12 +403,107 @@ header.sticky {
     font-size: 15px;
   }
 }
-/* -------- Main Ends Here ------------- */
+/* -------- Hero Ends Here ------------- */
+
+/* -------- CARD Starts Here ------------- */
+
+.carousel-body {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background: var(--gradient-2);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--primary-text);
+  font-family: "Poppins", sans-serif;
+  padding: 0 50px;
+}
+.carousel {
+  flex-basis: 60%;
+}
+.carousel-info {
+  flex-basis: 40%;
+}
+.slide-container {
+  /* max-width: 1120px; */
+  position: relative;
+  width: 100%;
+  background: rgb(117, 89, 89);
+  padding: 20px 0;
+  overflow: hidden;
+}
+.slide-content {
+  margin: 0 40px;
+  background-color: red;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.card {
+  /* width: 300px; */
+  border-radius: 25px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: #fff; */
+}
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content {
+  row-gap: 5px;
+  position: relative;
+  padding: 10px 14px;
+}
+.card-image {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  /* border-radius: 50%; */
+  background: #fff;
+  padding: 3px;
+}
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  /* border-radius: 50%; */
+  /* border: 4px solid #4070f4; */
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 10px 14px; */
+}
+.button {
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 16px;
+  background: #4070f4;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button:hover {
+  background: #265df2;
+}
+
+/* -------- CARD Ends Here ------------- */
 
 /* -------- Footer Starts Here ------------- */
 
 footer {
-  padding: 20px 0px 15px;
+  padding: 20px 0px 25px;
   width: 100%;
 
   position: relative;
@@ -380,7 +511,8 @@ footer {
   bottom: 0;
 
   background: linear-gradient(to right, var(--gradient-2), var(--gradient-3));
-  border-top-left-radius: 20px;
+  /* border-top-left-radius: 20px; */
+  border-top: 1px solid var(--ash);
 }
 
 .row {
