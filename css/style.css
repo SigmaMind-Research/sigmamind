@@ -420,7 +420,7 @@ main {
   color: var(--primary-text);
   font-family: "Poppins", sans-serif;
   padding: 0 50px;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .carousel {
   flex-basis: 60%;
@@ -430,9 +430,9 @@ main {
 }
 .slide-container {
   position: relative;
-  max-width: 1300px;
+  max-width: 1400px;
   width: 100%;
-  background: rgb(201, 198, 198);
+  /* background: rgb(201, 198, 198); */
   padding: 60px 0;
   overflow: hidden;
 }
@@ -440,11 +440,11 @@ main {
   margin: 0 50px;
   /* background-color: red; */
   overflow: hidden;
-  border-radius: 25px;
+  /* border-radius: 25px; */
 }
 .card {
   /* width:320px; */
-  border-radius: 25px;
+  /* border-radius: 25px; */
   background-color: #fff;
 }
 .image-content,
@@ -461,8 +461,8 @@ main {
 }
 .card-image {
   position: relative;
-  height: 150px;
-  width: 150px;
+  height: 400px;
+  width: 400px;
   /* border-radius: 50%; */
   background: #fff;
   padding: 3px;
@@ -489,7 +489,7 @@ main {
 }
 
 .swiper-navBtn {
-  color: #6e93f7;
+  color: #479b13;
   transition: color 300ms ease;
 }
 .swiper-navBtn:hover {
@@ -512,8 +512,14 @@ main {
 .swiper-pagination-bullet-active {
   background-color: #4070f4;
 }
-@media only screen and (max-width: 1000px){
-
+@media only screen and (max-width: 1300px){
+  .carousel-body{
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .carousel, .carousel-info {
+    flex-basis: 100%;
+  }
 }
 /* -------- CARD Ends Here ------------- */
 

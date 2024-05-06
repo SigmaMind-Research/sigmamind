@@ -32,7 +32,7 @@ function card_swiper() {}
 
 var swiper = new Swiper(".slide-content", {
   slidesPerView: 4,
-  spaceBetween: 30,
+  spaceBetween: 20,
   loop: true,
   centerSlide: "true",
   fade: "true",
