@@ -14,6 +14,8 @@
   --primary-text: white;
   --secondary-text: white;
 
+  --bg-gray: rgb(162, 162, 162);
+
   --gradient-1: #58a4b0;
   --gradient-2: #3e434e;
   --gradient-3: #1b1b1e;
@@ -424,6 +426,7 @@ main {
 }
 .carousel {
   flex-basis: 60%;
+  /* overflow: hidden; */
 }
 .carousel-info {
   flex-basis: 40%;
@@ -445,7 +448,7 @@ main {
 .card {
   /* width:320px; */
   /* border-radius: 25px; */
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 .image-content,
 .card-content {
@@ -457,21 +460,19 @@ main {
 }
 .image-content {
   padding: 10px 14px;
-  
 }
 .card-image {
   position: relative;
   height: 400px;
   width: 400px;
   /* border-radius: 50%; */
-  background: #fff;
-  padding: 3px;
+  /* padding: 3px; */
 }
 .card-image .card-img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  /* border-radius: 50%; */
+  border-radius: 20px;
 }
 .button {
   border: none;
@@ -488,7 +489,7 @@ main {
   background: #265df2;
 }
 
-.swiper-navBtn {
+/* .swiper-navBtn {
   color: #479b13;
   transition: color 300ms ease;
 }
@@ -504,20 +505,41 @@ main {
 }
 .swiper-button-prev {
   left: 0;
+} */
+.swiper-custom-nav {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 4rem;
+  z-index: 10;
+  color: #4070f4;
 }
+.nav-left,
+.nav-right {
+  cursor: pointer;
+}
+.nav-left:hover,
+.nav-right:hover {
+  color: #265df2;
+}
+
 .swiper-pagination-bullet {
   background-color: #6e93f7;
   opacity: 1;
 }
 .swiper-pagination-bullet-active {
-  background-color: #4070f4;
+  background-color: #d3db2d;
 }
-@media only screen and (max-width: 1300px){
-  .carousel-body{
+@media only screen and (max-width: 1500px) {
+  .carousel-body {
     flex-direction: column;
     overflow: hidden;
   }
-  .carousel, .carousel-info {
+  .carousel,
+  .carousel-info {
     flex-basis: 100%;
   }
 }
