@@ -422,25 +422,26 @@ main {
   color: var(--primary-text);
   font-family: "Poppins", sans-serif;
   padding: 0 50px;
-  overflow: hidden;
+
 }
 .carousel {
   flex-basis: 60%;
   /* overflow: hidden; */
+  max-width: 1400px;
+  transition: all 300ms ease;
 }
 .carousel-info {
   flex-basis: 40%;
 }
 .slide-container {
   position: relative;
-  max-width: 1400px;
+  padding: 60px 0;
   width: 100%;
   /* background: rgb(201, 198, 198); */
-  padding: 60px 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .slide-content {
-  margin: 0 50px;
+  margin: 0 60px;
   /* background-color: red; */
   overflow: hidden;
   /* border-radius: 25px; */
@@ -462,21 +463,22 @@ main {
   padding: 10px 14px;
 }
 .card-image {
-  position: relative;
+  /* position: relative; */
   height: 400px;
   width: 400px;
   /* border-radius: 50%; */
-  /* padding: 3px; */
+  padding: 3px;
 }
 .card-image .card-img {
   height: 100%;
   width: 100%;
+  
   object-fit: cover;
   border-radius: 20px;
 }
 .button {
   border: none;
-  font-size: 16px;
+  font-size: 20px;
   color: #fff;
   padding: 8px 16px;
   background: #4070f4;
@@ -488,24 +490,6 @@ main {
 .button:hover {
   background: #265df2;
 }
-
-/* .swiper-navBtn {
-  color: #479b13;
-  transition: color 300ms ease;
-}
-.swiper-navBtn:hover {
-  color: #4070f4;
-}
-.swiper-navBtn::before,
-.swiper-navBtn::after {
-  font-size: 35px;
-}
-.swiper-button-next {
-  right: 0;
-}
-.swiper-button-prev {
-  left: 0;
-} */
 .swiper-custom-nav {
   position: absolute;
   width: 100%;
@@ -514,7 +498,6 @@ main {
   top: 50%;
   transform: translateY(-50%);
   font-size: 4rem;
-  z-index: 10;
   color: #4070f4;
 }
 .nav-left,
@@ -531,7 +514,7 @@ main {
   opacity: 1;
 }
 .swiper-pagination-bullet-active {
-  background-color: #d3db2d;
+  background-color: #b1b47d;
 }
 @media only screen and (max-width: 1500px) {
   .carousel-body {
@@ -542,6 +525,20 @@ main {
   .carousel-info {
     flex-basis: 100%;
   }
+}
+@media only screen and (max-width: 1400px){
+  .carousel {
+    max-width: 950px;
+  }
+  /* .image-content {
+    padding: 10px 7px;
+  } */
+}
+@media only screen and (max-width: 800px) {
+  .carousel {
+    max-width: 550px;
+  }
+  
 }
 /* -------- CARD Ends Here ------------- */
 

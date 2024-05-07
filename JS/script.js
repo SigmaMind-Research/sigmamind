@@ -31,8 +31,8 @@ function header_dropdown() {
 function card_swiper() {}
 
 var swiper = new Swiper(".slide-content", {
-  // slidesPerView: 4,
-  spaceBetween: 20,
+  slidesPerView: 3,
+  spaceBetween: 10,
   loop: true,
   centerSlide: "true",
   fade: "true",
@@ -51,10 +51,10 @@ var swiper = new Swiper(".slide-content", {
     0: {
       slidesPerView: 1,
     },
-    500: {
+    800: {
       slidesPerView: 2,
     },
-    1300: {
+    1400: {
       slidesPerView: 3,
     },
   },
