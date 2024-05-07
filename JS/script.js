@@ -28,37 +28,37 @@ function header_dropdown() {
   });
 }
 
-function card_swiper() {}
+function card_swiper() {
+  new Swiper(".slide-content", {
+    // slidesPerView: 3,
+    spaceBetween: 10,
+    loop: true,
+    centerSlide: "true",
+    fade: "true",
+    grabCursor: "true",
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".nav-right",
+      prevEl: ".nav-left",
+    },
 
-var swiper = new Swiper(".slide-content", {
-  slidesPerView: 3,
-  spaceBetween: 10,
-  loop: true,
-  centerSlide: "true",
-  fade: "true",
-  grabCursor: "true",
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    dynamicBullets: true,
-  },
-  navigation: {
-    nextEl: ".nav-right",
-    prevEl: ".nav-left",
-  },
-
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      800: {
+        slidesPerView: 2,
+      },
+      1400: {
+        slidesPerView: 3,
+      },
     },
-    800: {
-      slidesPerView: 2,
-    },
-    1400: {
-      slidesPerView: 3,
-    },
-  },
-});
+  });
+}
 
 sticky_header();
 header_dropdown();

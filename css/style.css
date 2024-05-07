@@ -12,7 +12,7 @@
   --creme-2: #d9e5d6;
 
   --primary-text: white;
-  --secondary-text: white;
+  --secondary-text: rgb(221, 221, 221);
 
   --bg-gray: rgb(162, 162, 162);
 
@@ -104,7 +104,7 @@ header.sticky {
 }
 
 .links a {
-  color: var(--primary-text);
+  color: var(--secondary-text);
   font-size: 1.1rem;
   padding: 20px 25px;
 
@@ -412,7 +412,7 @@ main {
 .carousel-body {
   position: relative;
   width: 100%;
-  height: 80vh;
+  height: 60vh;
   background: var(--gradient-2);
 
   display: flex;
@@ -422,7 +422,6 @@ main {
   color: var(--primary-text);
   font-family: "Poppins", sans-serif;
   padding: 0 50px;
-
 }
 .carousel {
   flex-basis: 60%;
@@ -435,7 +434,7 @@ main {
 }
 .slide-container {
   position: relative;
-  padding: 60px 0;
+  padding: 60px 0 30px;
   width: 100%;
   /* background: rgb(201, 198, 198); */
   /* overflow: hidden; */
@@ -472,7 +471,7 @@ main {
 .card-image .card-img {
   height: 100%;
   width: 100%;
-  
+
   object-fit: cover;
   border-radius: 20px;
 }
@@ -516,36 +515,68 @@ main {
 .swiper-pagination-bullet-active {
   background-color: #b1b47d;
 }
-@media only screen and (max-width: 1500px) {
+
+.carousel-info {
+  padding: 0px 60px 40px;
+  position: relative;
+}
+.carousel-info h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.carousel-info p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+@media only screen and (max-width: 1700px) {
   .carousel-body {
     flex-direction: column;
     overflow: hidden;
+    height: 80vh;
   }
   .carousel,
   .carousel-info {
     flex-basis: 100%;
   }
+  .carousel-info {
+    padding: 40px 30px 0px;
+  }
 }
-@media only screen and (max-width: 1400px){
+@media only screen and (max-width: 1400px) {
   .carousel {
     max-width: 950px;
   }
   /* .image-content {
     padding: 10px 7px;
   } */
+  .carousel-info h1 {
+    font-size: 2.5rem;
+  }
+  .carousel-info p {
+    font-size: 1.1rem;
+  }
 }
+
 @media only screen and (max-width: 800px) {
+  .carousel-body {
+    height: 110vh;
+    padding: 0 30px;
+  }
   .carousel {
     max-width: 550px;
   }
-  
+  .carousel-info {
+    padding: 40px 10px 0px;
+  }
 }
+
 /* -------- CARD Ends Here ------------- */
 
 /* -------- Footer Starts Here ------------- */
 
 footer {
-  padding: 20px 0px 25px;
+  padding: 10px 0px 10px;
   width: 100%;
 
   position: relative;
@@ -557,7 +588,7 @@ footer {
   border-top: 1px solid var(--ash);
 }
 
-.row {
+/* .row {
   width: 95%;
   margin: 50px auto;
   display: flex;
@@ -605,17 +636,39 @@ footer {
 .footer-content ul li {
   margin-bottom: 10px;
   font-size: 15px;
+} */
+.footerBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+  flex-wrap: wrap;
+  color: rgb(221, 221, 221);
 }
-
-.copyright {
-  margin-top: 15px;
-  color: var(--secondary-text);
-
+.footer-logo {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footerLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+.footerLinks a {
+  font-size: 2.5rem;
+  transition: all 250ms ease;
+}
+.footerLinks a:hover {
+  transform: scale(1.2);
+}
 @media only screen and (max-width: 1000px) {
   footer {
     padding: 0px 0px 10px;
@@ -649,6 +702,12 @@ footer {
   }
   .row {
     margin: 30px auto;
+  }
+  .footerBottom {
+    margin: 5px 0px;
+  }
+  .footerLinks {
+    margin: 10px 0;
   }
   .copyright {
     flex-direction: column;
