@@ -339,12 +339,12 @@ main {
 }
 .hero-text {
   flex-basis: 65%;
-  padding: 0px 60px 0px;
+  padding: 0px 90px 0px;
 }
 .hero-text h1 {
   font-weight: 850;
-  font-size: 100px;
-  line-height: 130px;
+  font-size: 6rem;
+  line-height: 6.5rem;
   font-stretch: ultra-expanded;
   text-transform: uppercase;
 
@@ -366,7 +366,7 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 3s reverse infinite;
-  word-spacing: 10px;
+  word-spacing: 15px;
   /* display: inline-block; */
 }
 @keyframes textclip {
@@ -400,10 +400,10 @@ main {
     flex-basis: 40%;
   }
   .hero-text h1 {
-    word-spacing: 5px;
+    word-spacing: 10px;
     font-weight: 850;
-    font-size: 90px;
-    line-height: 110px;
+    font-size: 5.5rem;
+    line-height: 6rem;
   }
   .hero-img {
     margin-right: 20px;
@@ -414,8 +414,8 @@ main {
     padding: 0px 40px 0px;
   }
   .hero-text h1 {
-    font-size: 80px;
-    line-height: 90px;
+    font-size: 5rem;
+    line-height: 5.5rem;
   }
   .hero-img {
     margin-right: none;
