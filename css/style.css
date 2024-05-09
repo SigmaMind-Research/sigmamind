@@ -340,6 +340,7 @@ main {
 .hero-text {
   flex-basis: 65%;
   padding: 0px 90px 0px;
+  margin: 0 50px;
 }
 .hero-text h1 {
   font-weight: 850;
@@ -412,10 +413,11 @@ main {
 @media only screen and (max-width: 1200px) {
   .hero-text {
     padding: 0px 40px 0px;
+    margin: 0px;
   }
   .hero-text h1 {
-    font-size: 5rem;
-    line-height: 5.5rem;
+    font-size: 4.7rem;
+    line-height: 5.2rem;
   }
   .hero-img {
     margin-right: none;
