@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +22,11 @@
   --gradient-3: #1b1b1e;
   --gradient-4: #1a1c1e;
 }
-
+@font-face {
+  font-family: "Enfonix";
+  src: url("../assets/fonts/enfonix-demo-bf63d90aad400f4-webfont.woff"),
+    url("../assets/fonts/enfonix-demo-bf63d90aad400f4-webfont.woff2");
+}
 html,
 body {
   height: 100%;
@@ -33,7 +38,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  font-family: "roboto", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 ul,
@@ -77,13 +82,14 @@ header.sticky {
 .logo {
   display: flex;
   align-items: center;
+  font-family: "Enfonix", sans-serif;
 }
 .logo a {
   display: flex;
   align-items: center;
 }
 .logo__head {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--primary-text);
   font: bold;
   opacity: 0.8;
@@ -94,6 +100,7 @@ header.sticky {
 .logo img {
   width: 20%;
   margin: 0;
+  padding: 0;
 }
 .links {
   position: relative;
@@ -328,14 +335,19 @@ main {
   background-position: center;
   background-repeat: no-repeat; */
 
-  background: var(--gradient-4);
+  /* background: var(--gradient-4); */
+  /* background-color: #212529; */
+  background-color: #050f1a;
 
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--secondary-text);
 
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Enfonix", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
+  overflow-y: hidden;
 }
 .hero-text {
   flex-basis: 65%;
@@ -377,7 +389,7 @@ main {
 }
 
 .hero-text p {
-  font-size: 20px;
+  font-size: 1.4rem;
   font-weight: 400;
   margin-top: 20px;
 }
@@ -486,7 +498,7 @@ main {
   justify-content: center;
 
   color: var(--secondary-text);
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   padding: 0 50px;
 }
 .carousel {
@@ -546,7 +558,10 @@ main {
   font-size: 20px;
   color: var(--secondary-text);
   padding: 8px 16px;
-  background: #4070f4;
+
+  /* background: #4070f4; */
+  background: #34a05f;
+
   border-radius: 6px;
   margin: 14px;
   cursor: pointer;
@@ -554,7 +569,8 @@ main {
 }
 .button:hover {
   color: var(--primary-text);
-  background: #265df2;
+  /* background: #265df2; */
+  background: #2b7a4a;
 }
 .swiper-custom-nav {
   position: absolute;
@@ -564,7 +580,9 @@ main {
   top: 50%;
   transform: translateY(-50%);
   font-size: 4rem;
-  color: #4070f4;
+
+  /* color: #4070f4; */
+  color: #34a05f;
 }
 .nav-left,
 .nav-right {
@@ -572,15 +590,17 @@ main {
 }
 .nav-left:hover,
 .nav-right:hover {
-  color: #265df2;
+  /* color: #265df2; */
+  color: #2b7a4a;
 }
-
+.swiper-pagination {
+  --swiper-theme-color: #34a05f;
+}
 .swiper-pagination-bullet {
-  background-color: #6e93f7;
   opacity: 1;
 }
 .swiper-pagination-bullet-active {
-  background-color: #b1b47d;
+  opacity: 1;
 }
 
 .carousel-info {
@@ -653,6 +673,7 @@ footer {
   background: linear-gradient(to right, var(--gradient-2), var(--gradient-3));
   /* border-top-left-radius: 20px; */
   border-top: 1px solid var(--ash);
+  /* overflow: hidden; */
 }
 
 /* .row {
@@ -716,6 +737,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Enfonix", sans-serif;
 }
 
 .copyright {
