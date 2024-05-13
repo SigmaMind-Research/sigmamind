@@ -1,0 +1,141 @@
+footer {
+  padding: 10px 0px 10px;
+  width: 100%;
+
+  position: relative;
+  margin-top: auto;
+  bottom: 0;
+
+  background: linear-gradient(to right, var(--gradient-2), var(--gradient-3));
+  /* border-top-left-radius: 20px; */
+  border-top: 1px solid var(--ash);
+  /* overflow: hidden; */
+}
+
+/* .row {
+    width: 95%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .col-1 {
+    flex-basis: 40%;
+    align-self: self-start;
+  }
+  .col-2 {
+    flex-basis: 60%;
+  }
+  .ft-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+  .ft-logo img {
+    width: 14%;
+  }
+  .logo__foot {
+    font-size: 28px;
+  }
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: auto;
+    height: auto;
+  }
+  
+  .footer-content li:hover,
+  .footer-content h2:hover {
+    transform: translate(5px, -5px);
+    transition: transform 100ms ease-in-out;
+  }
+  .footer-content h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .footer-content ul li {
+    margin-bottom: 10px;
+    font-size: 15px;
+  } */
+.footerBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+  flex-wrap: wrap;
+  color: rgb(221, 221, 221);
+}
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Enfonix", sans-serif;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footerLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+.footerLinks a {
+  font-size: 2.5rem;
+  transition: all 250ms ease;
+}
+.footerLinks a:hover {
+  transform: scale(1.2);
+}
+@media only screen and (max-width: 1000px) {
+  footer {
+    padding: 0px 0px 10px;
+  }
+  .col-1,
+  .col-2 {
+    flex-basis: 100%;
+  }
+  .ft-logo img {
+    width: 8%;
+  }
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .ft-logo img {
+    width: 11%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .ft-logo {
+    margin-bottom: 30px;
+  }
+  .ft-logo img {
+    width: 15%;
+  }
+  .footer-content h2 {
+    font-size: 20px;
+  }
+  .row {
+    margin: 30px auto;
+  }
+  .footerBottom {
+    margin: 5px 0px;
+  }
+  .footerLinks {
+    margin: 10px 0;
+  }
+  .copyright {
+    flex-direction: column;
+  }
+}
+/* Footer Ends Here */
