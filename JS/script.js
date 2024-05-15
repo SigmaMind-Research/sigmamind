@@ -50,10 +50,10 @@ function card_swiper() {
       0: {
         slidesPerView: 1,
       },
-      800: {
+      1300: {
         slidesPerView: 2,
       },
-      1400: {
+      1700: {
         slidesPerView: 3,
       },
     },

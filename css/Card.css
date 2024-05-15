@@ -3,7 +3,7 @@
 .carousel-body {
   position: relative;
   width: 100%;
-  height: 70vh;
+  height: 660px;
   background: var(--gradient-2);
 
   display: flex;
@@ -130,44 +130,42 @@
   font-weight: 400;
 }
 @media only screen and (max-width: 1700px) {
+  .carousel {
+    max-width: 950px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .carousel {
+    max-width: 550px;
+  }
+  .carousel-info {
+    padding: 0px 30px 40px;
+  }
+}
+
+@media only screen and (max-width: 820px) {
   .carousel-body {
     flex-direction: column;
-    overflow: hidden;
-    height: 80vh;
+    height: auto;
   }
   .carousel,
   .carousel-info {
     flex-basis: 100%;
   }
-  .carousel-info {
-    padding: 40px 30px 0px;
-  }
-}
-@media only screen and (max-width: 1400px) {
-  .carousel {
-    max-width: 950px;
-  }
-  /* .image-content {
-      padding: 10px 7px;
-    } */
   .carousel-info h1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
   .carousel-info p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 
-@media only screen and (max-width: 800px) {
-  .carousel-body {
-    height: 110vh;
-    padding: 0 30px;
-  }
-  .carousel {
-    max-width: 550px;
+@media only screen and (max-width: 530px) {
+  .swiper-custom-nav {
+    display: none;
   }
   .carousel-info {
-    padding: 40px 10px 0px;
+    margin-bottom: 40px;
   }
 }
 

@@ -39,6 +39,7 @@ body {
   flex-direction: column;
   min-height: 100%;
   font-family: "Space Grotesk", sans-serif;
+  overflow-x: hidden;
 }
 
 ul,
