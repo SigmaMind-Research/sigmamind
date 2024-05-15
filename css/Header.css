@@ -17,6 +17,7 @@ header {
   z-index: 10000;
 }
 header.sticky {
+  overflow-y: hidden;
   padding: 0px 100px;
   /* background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(8px); */
@@ -236,6 +237,21 @@ header.sticky {
     transform: translateY(-8.7px) rotate(-45deg);
   }
 }
+@media only screen and (max-width: 820px) {
+  header {
+    height: 65px;
+  }
+  header.sticky {
+    height: 60px;
+  }
+  .logo__head {
+    font-size: 1.7rem;
+    transition: all 500ms ease;
+  }
+  .logo img {
+    width: 15%;
+  }
+}
 @media only screen and (max-width: 500px) {
   header {
     padding: 0px 10px;
@@ -247,12 +263,7 @@ header.sticky {
     margin-left: 10px;
   }
   .logo img {
-    width: 18%;
-  }
-  .logo__head {
-    font-size: 2rem;
-    color: var(--primary-text);
-    font: bold;
+    width: 15%;
   }
   .menu__toggle {
     font-size: 1.3rem;

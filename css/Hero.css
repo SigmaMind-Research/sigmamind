@@ -26,7 +26,7 @@
   /* font-family: "Poppins", sans-serif; */
   /* font-family: "Enfonix", sans-serif; */
   /* font-family: "Space Grotesk", sans-serif; */
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 .hero-text {
   flex-basis: 55%;
@@ -95,6 +95,7 @@
 @media only screen and (max-width: 1500px) {
   .hero {
     padding: 0 45px;
+    height: 800px;
   }
   .hero-text {
     padding: 0px 45px 0px;
@@ -102,6 +103,7 @@
   }
   .hero-img {
     flex-basis: 50%;
+    padding: 20px;
   }
   .hero-text h1 {
     word-spacing: 10px;
@@ -119,8 +121,14 @@
     font-size: 4.7rem;
     line-height: 5.2rem;
   }
+  .hero-text p {
+    font-size: 1.2rem;
+  }
 }
 @media only screen and (max-width: 1000px) {
+  .hero {
+    height: 700px;
+  }
   .hero-text {
     padding: 0 20px;
     flex-basis: 40%;
@@ -146,6 +154,7 @@
   .hero {
     flex-direction: column;
     padding-top: 50px;
+    height: 850px;
   }
   .hero-text,
   .hero-img {
@@ -161,6 +170,7 @@
 @media only screen and (max-width: 600px) {
   .hero {
     padding: 50px 0 0 0;
+    height: 900px;
   }
   .hero-text {
     padding: 50px 70px 0px;
