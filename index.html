@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SigmaMind</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/Header.css">
+    <link rel="stylesheet" href="css/Hero.css">
+    <link rel="stylesheet" href="css/Card.css">
+    <link rel="stylesheet" href="css/Footer.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -22,6 +27,12 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- START of Navbar -->
@@ -35,23 +46,27 @@
 
       <nav>
         <ul class="links">
-          <li>
+          <li class="links-li">
             <a class="dropdown">
               Research<ion-icon name="caret-down-outline"></ion-icon>
             </a>
 
             <div class="dropdown-menu">
               <ul>
-                <li><a href="#">something 1</a></li>
-                <li><a href="#">something 2</a></li>
+                <li>
+                  <a href="#"><span class="arrow">></span>something 1</a>
+                </li>
+                <li>
+                  <a href="#"><span class="arrow">></span>something 2</a>
+                </li>
               </ul>
             </div>
           </li>
-          <li><a href="#">RadioX</a></li>
-          <li>
+          <li class="links-li"><a href="#">RadioX</a></li>
+          <li class="links-li">
             <a href="about.html">About</a>
           </li>
-          <li><a href="#">Blog</a></li>
+          <li class="links-li"><a href="#">Blog</a></li>
         </ul>
       </nav>
 
@@ -63,6 +78,167 @@
     </header>
 
     <!-- END of Navbar -->
+
+    <main>
+      <!-- START Hero Section Body -->
+
+      <div class="hero">
+        <div class="hero-text">
+          <h1>Elevate Radiology with RadioX</h1>
+          <p>Discover the future of chest X-ray analysis with RadioX</p>
+        </div>
+        <div class="hero-img">
+          <img src="images/Hero-bg-dummy.png" alt="">
+        </div>
+      </div>
+
+      <!-- END Hero Section Body -->
+
+      <!-- START of CARD Body -->
+
+      <div class="carousel-body">
+        <div class="carousel">
+          <div class="slide-container swipper">
+            <div class="slide-content">
+              <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                  <div class="image-content">
+                    <!-- <span class="overlay"></span> -->
+
+                    <div class="card-image">
+                      <img src="images/Card/1.jpg" alt="" class="card-img" />
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <button class="button">Learn More</button>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="image-content">
+                    <!-- <span class="overlay"></span> -->
+
+                    <div class="card-image">
+                      <img src="images/Card/2.jpg" alt="" class="card-img" />
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <button class="button">Learn More</button>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="image-content">
+                    <!-- <span class="overlay"></span> -->
+
+                    <div class="card-image">
+                      <img src="images/Card/3.jpg" alt="" class="card-img" />
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <button class="button">Learn More</button>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="image-content">
+                    <!-- <span class="overlay"></span> -->
+
+                    <div class="card-image">
+                      <img src="images/Card/4.jpg" alt="" class="card-img" />
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <button class="button">Learn More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="swiper-button-next swiper-navBtn"></div> -->
+            <div class="swiper-custom-nav">
+              <ion-icon name="chevron-back-outline" class="nav-left"></ion-icon>
+              <ion-icon
+                name="chevron-forward-outline"
+                class="nav-right"
+              ></ion-icon>
+            </div>
+            <!-- <div class="swiper-button-prev swiper-navBtn"></div> -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <div class="carousel-info">
+          <h1>Researchs</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum impedit
+            nulla rerum officia pariatur, fuga, non voluptatibus hic fugit nemo
+            tenetur iste harum, recusandae culpa nesciunt saepe qui. Asperiores
+            minima beatae velit voluptatem veniam repellat soluta at fuga rerum
+            sed?
+          </p>
+        </div>
+      </div>
+
+      <!-- END of CARD Body -->
+    </main>
+
+    <!-- START of Footer -->
+
+    <footer>
+      <!-- <div class="row">
+        <div class="col-1">
+          <a href="index.html" class="ft-logo">
+            <img src="images/logo-sm.png" alt="logo" srcset="" />
+            <h2 class="logo__foot">SigmaMind</h2>
+          </a>
+        </div>
+
+        <div class="col-2">
+          <div class="footer-links">
+            <div class="footer-content">
+              <a href="#"><h2>Research</h2></a>
+              <ul>
+                <li><a href="#">something 1</a></li>
+                <li><a href="#">something 2</a></li>
+              </ul>
+            </div>
+            <div class="footer-content">
+              <a href="#"><h2>RadioX</h2></a>
+            </div>
+            <div class="footer-content">
+              <a href="about.html"><h2>About</h2></a>
+            </div>
+            <div class="footer-content">
+              <a href="#"><h2>Blog</h2></a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- <hr /> -->
+      <div class="footerBottom">
+        <a href="#" class="footer-logo">
+          <img src="images/logo-ssm.png" alt="" />
+          <h1>SigmaMind</h1>
+        </a>
+
+        <div class="copyright">
+          <p>copyright &copy; 2024 SigmaMind.</p>
+          <p>All Rights Reserved</p>
+        </div>
+
+        <div class="footerLinks">
+          <a href="#" class="fa-brands fa-linkedin"></a>
+          <a
+            href="https://github.com/SigmaMind-Research/"
+            class="fa-brands fa-github"
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- END of Footer -->
   </body>
   <script
     type="module"
@@ -72,5 +248,6 @@
     nomodule
     src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
   ></script>
-  <script type="module" src="script.js"></script>
+  <script src="JS/swiper-bundle.min.js"></script>
+  <script type="module" src="JS/script.js"></script>
 </html>
