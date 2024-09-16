@@ -1,0 +1,248 @@
+/* Define custom fonts */
+@font-face {
+    font-family: 'mq';
+    src: url('../fonts/TTF/Panchang-Variable.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* General body styles */
+body {
+    font-family: "mq", "Space Grotesk", sans-serif;
+    background-color: #050f1a;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+  
+  /* Logo image styling */
+  .logo-img {
+    width: 8%;
+    padding-top: 0;
+  }
+  
+  /* Navbar brand styles */
+  .navbar-brand {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    max-width: fit-content;
+  }
+  
+  /* Main container styles */
+  .container {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10%;
+    width: 100%;
+    align-items: center;
+  }
+  
+  /* About button styling */
+  .abt-button {
+    margin: 25px;
+    border: none;
+    font-size: 1.2rem;
+    justify-content: baseline;
+  }
+  
+  /* Link styles */
+  a,
+  a:hover,
+  a:visited,
+  a:active {
+    color: #29e97e;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #395044;
+  }
+  
+  /* General image styling */
+  img {
+    width: 80%;
+    padding-top: 8%;
+  }
+  
+  /* Text column styling */
+  .text-col {
+    padding-left: 8%;
+    margin-top: 10%;
+    color: white;
+  }
+  
+  /* Heading (h1) styling */
+  h1 {
+    font-family: 'mq', cursive;
+    margin-left: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      225deg,
+      #ACB1D6 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%
+    );
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 3s reverse infinite;
+    display: inline-block;
+    font-size: 3.6rem;
+  }
+  
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+  
+  /* Paragraph styling */
+  p {
+    padding: 10px;
+    margin-left: 20px;
+    padding-top: 15px;
+    font-size: 1.2rem;
+  }
+  
+  /* Intro text styling */
+  .intro-con {
+    margin-left: 20px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  /* Card layout for course items */
+  .ag-courses_box {
+    width: 100%;
+    margin-top: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the cards */
+  }
+  
+  .ag-courses_item {
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the card content */
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #050f1a; /* Match card background to screen */
+    text-align: center; /* Center text */
+  }
+  
+  /* Horizontal image above text */
+  .ag-courses-item_image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #fff; /* Optional: separates image from text */
+  }
+  
+  /* Course item title styling */
+  .ag-courses-item_title {
+    font-size: 1.2rem;
+    text-align: justify;
+    color: #FFF;
+    position: relative;
+    z-index: 2;
+    padding: 10px;
+    line-height: 1.6;
+  }
+  
+  /* Media queries for responsiveness */
+  
+  /* For medium screens */
+  @media only screen and (max-width: 680px) {
+    .navbar-brand {
+      width: min-content;
+    }
+  
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      text-align: center;
+    }
+  
+    .intro-con {
+      margin-left: 0;
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: white;
+    }
+  
+    img {
+      width: 100%;
+      margin-top: 10%;
+      padding-bottom: 5%;
+    }
+  
+    .logo-img {
+      width: 20%;
+      margin-top: 5%;
+    }
+  }
+  
+  /* For small screens */
+  @media only screen and (max-width: 470px) {
+    .navbar-brand {
+      font-size: 1.5rem;
+      width: min-content;
+    }
+  
+    .abt-button {
+      margin-top: 0;
+    }
+  
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+    }
+  
+    .row {
+      margin: 8% 4%;
+    }
+  
+    .abt-button {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+  
+    .logo-img {
+      width: 20%;
+      margin-top: 5%;
+    }
+  }
+  
+  /* Footer styling */
+  footer {
+    width: 100%;
+  }
+  
+  .footer-class {
+    background-color: #080808;
+    padding: 3%;
+  }
+  
+  #footer-text {
+    font-size: 15px;
+    padding-left: 5px;
+    font-weight: bold;
+    color: white;
+  }
+  

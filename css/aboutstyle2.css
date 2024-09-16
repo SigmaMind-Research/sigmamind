@@ -1,0 +1,171 @@
+html {
+    overflow: auto;
+  }
+  
+  @font-face {
+    font-family: 'mq';
+    src: url('../fonts/TTF/Panchang-Variable.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    min-height: 100vh;
+    /* background-image: url(../images/step.png); */
+    background-image: url("../images/bg1.svg");
+    background-color: #050f1a;
+    font-family: 'mq', "Space Grotesk", sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .logo-img {
+    width: 8%;
+    padding-top: 0;
+  }
+  
+  .navbar-brand {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    max-width: fit-content;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    padding-bottom: 60px;
+  }
+  
+  #cont-col {
+    color: white;
+    text-align: left;
+  }
+  
+  .cont-text {
+    padding: 7% 6% 0;
+    text-align: justify;
+  }
+  
+  h2 {
+    font-size: 60px;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+  
+  p {
+    font-size: 28px;
+  }
+  
+  .logo-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logocontents {
+    display: flex;
+    padding-top: 10%;
+    position: absolute;
+    bottom: 10%;
+  }
+  
+  .text p {
+    color: white;
+    padding-right: 10px;
+    font-size: 1rem;
+  }
+  
+  .microimg {
+    padding-right: 10px;
+    width: 150px;
+  }
+  
+  footer{
+    bottom:0;
+    width:100%;
+  }
+  .footer-class{
+    background-color: #080808;
+    padding:3%;
+  }
+  
+  #footer-text{
+    font-size: 15px;
+    padding-left:5px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  
+  @media only screen and (max-width: 850px) {
+    .navbar-brand {
+      font-size: 1.5rem;
+      width: min-content;
+    }
+  
+    .hm-button {
+        margin:25px;
+        border: none;
+        font-size: 1.2rem;
+        justify-content: baseline;
+      }
+      a,
+      a:hover,
+      a:visited,
+      a:active
+      {
+        color: #29e97e;
+        text-decoration: none;
+      }
+      a:hover{
+          color: #395044;
+      
+      }
+    p {
+      font-size: 1.5rem;
+    }
+  
+    .microimg {
+      width: 100px;
+    }
+  
+    .logo-img {
+      width: 20%;
+    }
+  
+    .about-image {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width:530px) { */
+    body{
+    width:100%;
+    margin:0;
+    overflow-x: hidden;
+    }
+    .navbar-brand {
+      font-size: 1.5rem;
+      width: min-content;
+    }
+    .hm-button{
+    margin:0;
+    font-size: 1.2rem;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+    p{
+      font-size: 1rem;
+    }
+    .microimg{
+      width:100px;
+    }
+    .logo-img{
+      width:20%;
+    }
+    }
+    
+  

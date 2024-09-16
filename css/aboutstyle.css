@@ -1,12 +1,19 @@
 html{
   overflow:auto;
 }
-
+@font-face {
+  font-family: 'mq';
+  src: url('../fonts/TTF/Panchang-Variable.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   min-height: 100vh;
-  background-image: url(../images/step.png);
+  /* background-image: url(../images/step.png); */
+  /* background-image: url("../images/bg1.svg"); */
+  background-color: #050f1a;
   /* background-image:linear-gradient(140deg, rgba(0,0,0,1) 20%, #1db468 59% ); */
-  font-family: "Space Grotesk", sans-serif;
+  font-family: 'mq',"Space Grotesk", sans-serif;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -19,7 +26,7 @@ body {
 .navbar-brand {
   color:white;
   font-weight: bold;
-  font-size: 2.4rem;
+  font-size: 1.5rem;
   max-width:fit-content;
 }
 
@@ -36,6 +43,47 @@ body {
 }
 
 .cont-text{
+  .logo-img{
+    width: 8%;
+    padding-top:0;
+  }
+  
+  .navbar-brand {
+    color:white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    max-width:fit-content;
+  }
+  
+  .container{
+    margin:0;
+    padding:0;
+    padding-bottom: 10%;
+    min-width:100%;
+  }
+  
+  .hm-button{
+    margin:25px;
+    border: none;
+    font-size: 1.2rem;
+    justify-content: baseline;
+  }
+  a,
+  a:hover,
+  a:visited,
+  a:active
+  {
+    color: #29e97e;
+    text-decoration: none;
+  }
+  a:hover{
+      color: #395044;
+  
+  }
+  img{
+    width:80%;
+    padding-top: 8%;
+  }
   padding: 7% 6% 0;
   text-align: justify;
 }
@@ -45,7 +93,8 @@ h2{
   padding-bottom: 20px;
 }
 p{
-  font-size: 28px;
+  font-size: 20px;
+  font-family: 'mq';
 }
 
 .logo-cont{
@@ -98,7 +147,7 @@ a:active
 .hm-button{
   margin:25px;
   border: none;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
 }
 i{
   color: #ffffff;
@@ -127,6 +176,19 @@ p{
 }
 
 }
+.contact-details p {
+    margin: 0;
+}
+
+.social-media a {
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.social-media a:hover {
+    color: #007bff;
+}
+
 
 @media only screen and (max-width:530px) {
 body{
