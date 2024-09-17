@@ -41,7 +41,24 @@ body {
   color:white;
   text-align: center;
 }
+.hm-button{
+  margin:25px;
+  border: none;
+  font-size: 0.8rem;
+  justify-content: baseline;
+}
+a,
+a:hover,
+a:visited,
+a:active
+{
+  color: #29e97e;
+  text-decoration: none;
+}
+a:hover{
+    color: #395044;
 
+}
 .cont-text{
   .logo-img{
     width: 8%;
@@ -65,7 +82,7 @@ body {
   .hm-button{
     margin:25px;
     border: none;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     justify-content: baseline;
   }
   a,
@@ -97,26 +114,34 @@ p{
   font-family: 'mq';
 }
 
-.logo-cont{
-  display:flex;
+/* Container for the technical partner section */
+.logo-cont {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content:center;
+  flex-direction: column;
+  margin-top: 50px; /* Add margin to push it away from other content */
+  padding-bottom: 50px; /* Add padding to avoid overlap with footer */
 }
 
-.logocontents{
+.logocontents {
   display: flex;
-  padding-top: 10%;
-  position:absolute;
-  bottom:10%;
+  justify-content: center;
+  align-items: center;
+  background-color: #050f1a; /* Optional: Add background color for contrast */
+  padding: 20px;
+  /* border-radius: 10px; */
 }
-.text p{
-  color:white;
-  padding-right:10px;
-  font-size: 1rem;
+
+.text p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #ffffff;
 }
-.microimg{
-  padding-right:10px;
-  width:150px;
+
+.microimg {
+  width: 100px; /* Adjust size of partner logo */
+  margin-left: 20px;
 }
 
 footer{
@@ -135,20 +160,21 @@ footer{
   font-weight: bold;
 }
 
-a,
+/* a,
 a:hover,
 a:visited,
 a:active
 {
   color: white;
-  text-decoration: none;
-}
+  text-decoration: none; */
+/* } */
 
-.hm-button{
-  margin:25px;
-  border: none;
-  font-size: 1.2rem;
-}
+/* .hm-button{ */
+  /* margin:25px; */
+  /* border: none; */
+  /* font-size: 0.8rem; */
+  /* justify-content: baseline; */
+/* } */
 i{
   color: #ffffff;
 }
@@ -163,7 +189,7 @@ i{
 }
 .hm-button{
 margin:0;
-font-size: 1.2rem;
+font-size: 0.8rem;
 }
 p{
   font-size: 1.5rem;
@@ -202,7 +228,7 @@ overflow-x: hidden;
 }
 .hm-button{
 margin:0;
-font-size: 1.2rem;
+font-size: 0.8rem;
 }
 h2 {
   font-size: 3rem;

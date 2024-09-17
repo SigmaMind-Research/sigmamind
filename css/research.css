@@ -46,7 +46,7 @@ body {
   .abt-button {
     margin: 25px;
     border: none;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     justify-content: baseline;
   }
   
@@ -220,7 +220,7 @@ body {
   
     .abt-button {
       margin: 0;
-      font-size: 1.2rem;
+      font-size: 0.8rem;
     }
   
     .logo-img {

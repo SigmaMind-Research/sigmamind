@@ -1,14 +1,14 @@
 const paragraphs = [
-    "At SigmaMind, our mission is to shape the future by pioneering cutting-edge AI and deep learning solutions that empower businesses, industries, and society. We are committed to pushing the boundaries of technology, creating innovative AI systems that are both intelligent and ethical.",
-    "Our vision is to harness the power of data and machine learning to solve real-world challenges, whether it's revolutionizing healthcare, transforming business operations, or enabling smarter cities. Through relentless research and development, we strive to build scalable, sustainable, and responsible AI technologies that drive meaningful change.",
-    "By integrating cross-disciplinary expertise and fostering innovation, SigmaMind is dedicated to empowering our partners with AI-driven insights and solutions that are future-proof and globally impactful. Our goal is to be at the forefront of AI innovation, delivering results that not only advance technology but also elevate the human experience.",
+    "At SigmaMind, our mission is to revolutionize the world of content creation through innovative AI and deep learning solutions. We aim to solve the challenges faced by modern creators who struggle to manage multiple platforms and maintain content originality. By leveraging our cutting-edge research, we are building systems that enable creators to focus on what matters—crafting unique content—while we manage distribution, authenticity, and scalability.",
+    "Our vision is to lead a new era of content creation powered by AI, starting with music generation and expanding to tackle issues like fake news and deep fakes. We are focused on producing original, AI-driven content that empowers creators across industries, allowing them to grow quickly without the limitations of platform management or concerns about content authenticity. With AI, we believe creators can achieve unprecedented levels of innovation and impact.",
+    // "SigmaMind is dedicated to changing the way content is created and managed by leveraging AI to help artists and content creators thrive. Our goal is to remove the barriers of platform juggling, and ensure originality, while empowering creators with AI-driven insights and solutions. Through our research and development, we strive to foster growth for our partners and users, delivering scalable and impactful content solutions that stand out in today’s fast-paced digital landscape.",
   ];
   
   let paragraphIndex = 0;
   let textElement = document.getElementById('missionText');
-  let typingSpeed = 45; // typing speed in milliseconds
-  let deletingSpeed = 20;
-  let pauseBetweenParagraphs = 2000; // pause before typing the next paragraph
+  let typingSpeed = 40; // typing speed in milliseconds
+  let deletingSpeed = 15;
+  let pauseBetweenParagraphs = 3000; // pause before typing the next paragraph
   
   function typeParagraph(text, index = 0) {
     if (index < text.length) {
