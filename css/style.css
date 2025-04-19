@@ -47,6 +47,8 @@ body {
     padding: 0;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
+    background-color: #FAF1E6; /* Updated to the new palette */
+    color: #333; /* Ensure text is readable */
 }
 
 p {
@@ -65,6 +67,11 @@ a {
     -moz-transition: opacity 0.3s ease-out;
     -o-transition: opacity 0.3s ease-out;
     transition: opacity 0.3s ease-out;
+    color: #99BC85; /* Accent color for links */
+}
+
+a:hover {
+    color: #E4EFE7; /* Hover effect */
 }
 
 iframe {
@@ -89,7 +96,7 @@ figure {
 }
 
 .page-border .bottom-border, .page-border .left-border, .page-border .right-border, .page-border .top-border {
-    background: #f3f3ef;
+    background: #E4EFE7; /* Subtle border color */
     position: fixed;
     z-index: 9999;
 }
@@ -182,6 +189,7 @@ input:focus, textarea:focus {
 section {
     clear: both;
     overflow: hidden;
+    background-color: #FDFAF6; /* Secondary background */
 }
 
 /* Rows and Columns */
@@ -388,6 +396,14 @@ section {
     display: inline-block;
     border-width: 3px;
     border-style: solid;
+    background-color: #99BC85; /* Accent color */
+    color: #fff; /* Text color for contrast */
+    border-color: #99BC85;
+}
+
+.button:hover {
+    background-color: #E4EFE7; /* Lighter hover effect */
+    color: #333;
 }
 
 /* Play Button */
@@ -669,7 +685,7 @@ nav#nav-mobile a:hover {
     list-style: none;
 }
 
-.social-icons a {
+social-icons a {
     display: inline-block;
     width: 32px;
     text-align: center;
@@ -719,26 +735,32 @@ a img:hover {
 
 h1 {
     padding: 20px 0;
+    color: #99BC85; /* Accent color for headings */
 }
 
 h2 {
     padding: 14px 0;
+    color: #99BC85; /* Accent color for headings */
 }
 
 h3 {
     padding: 10px 0;
+    color: #99BC85; /* Accent color for headings */
 }
 
 h4 {
     padding: 7px 0;
+    color: #99BC85; /* Accent color for headings */
 }
 
 h5 {
     padding: 7px 0;
+    color: #99BC85; /* Accent color for headings */
 }
 
 h6 {
     padding: 7px 0;
+    color: #99BC85; /* Accent color for headings */
 }
 
 /* Text Alignment */
@@ -798,8 +820,6 @@ h6 {
     height: 5px;
     margin-top: 30px;
 }
-
-
 
 /*------------------------------------------------------------------------------------------*/
 /* 5. Content Elements */
@@ -1401,8 +1421,7 @@ blockquote {
 .client-overlay {
     background: rgba(0, 0, 0, 0.8);
     position: absolute;
-    top;
-    0;
+    top:0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -1495,7 +1514,81 @@ blockquote {
     margin:0;
 }
 
-
+* {
+    box-sizing: border-box;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.hero-section {
+    background: url('../images/banner-images/banner-image-00.jpg') center center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0 20px;
+}
+.intro-grid-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 60px 20px;
+}
+.intro-text {
+    flex: 1 1 100%;
+    max-width: 100%;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+@media (min-width: 768px) {
+    .intro-text {
+        flex: 1 1 30%;
+        max-width: 30%;
+    }
+    .project-grid {
+        flex: 1 1 65%;
+        max-width: 65%;
+    }
+}
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+.project-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+.project-item:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.project-item img {
+    width: 100%;
+    height: auto;
+}
+.project-description {
+    padding: 15px;
+}
+.project-details {
+    display: none;
+    padding: 15px;
+    background: #f9f9f9;
+    border-top: 1px solid #eee;
+}
+.project-item.active .project-details {
+    display: block;
+}
 
 /*------------------------------------------------------------------------------------------*/
 /* 7. Footer */
@@ -1503,6 +1596,8 @@ blockquote {
 
 #landing-footer {
     clear: both;
+    background-color: #E4EFE7; /* Footer background */
+    color: #333;
 }
 
 #landing-footer .row {
@@ -1520,6 +1615,14 @@ blockquote {
 
 #landing-footer li {
     display: inline-block;
+}
+
+#landing-footer a {
+    color: #99BC85; /* Footer links */
+}
+
+#landing-footer a:hover {
+    color: #FDFAF6; /* Hover effect */
 }
 
 /* Scroll Up */
@@ -1568,7 +1671,7 @@ blockquote {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #fff; /* change if the mask should have another color then white */
+    background-color: #FAF1E6; /* Match body background */
     z-index: 99999; /* makes sure it stays on top */
 }
 
@@ -1581,6 +1684,7 @@ blockquote {
     background-position: center;
     margin: -55px 0 0 -55px; /* is width and height divided by two */
     text-align: center;
+    color: #99BC85; /* Accent color for preloader */
 }
 
 /*!
